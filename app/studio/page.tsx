@@ -1,4 +1,5 @@
 "use client";
+import "./studio.css";
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
