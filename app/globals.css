@@ -60,3 +60,46 @@ p,li,.hero-lead,.inner-hero>p,.content-intro p,.content-intro li{
   font-weight:400;
   word-spacing:normal;
 }
+
+/* Homepage navigation, image-led section cards and contact details */
+.hero-redesign{grid-template-columns:1fr 1fr;gap:7%;padding-top:65px}
+.hero-photo{height:430px;position:relative;overflow:hidden;background:#d8d5c8}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.72)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(25,29,22,.48))}
+.hero-photo-caption{position:absolute;z-index:1;bottom:17px;left:20px;right:20px;display:flex;justify-content:space-between;color:#fff;font:9px 'DM Sans',sans-serif;letter-spacing:.14em}
+.section-grid-seven{grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;border:0}
+.section-grid-seven .section-card{padding:0;border:1px solid var(--line);min-height:0;background:#fbfaf6}
+.section-card-image{display:flex;flex-direction:column}
+.section-card-photo{height:145px;position:relative;overflow:hidden;background:#e1ddd2}
+.section-card-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.72);transition:transform .45s}
+.section-card-image:hover .section-card-photo img{transform:scale(1.05)}
+.section-card-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,29,22,.08),rgba(25,29,22,.2))}
+.section-number{position:absolute;z-index:1;top:12px;right:13px;color:#fff;font:10px 'DM Sans',sans-serif;letter-spacing:.12em}
+.section-photo-icon{position:absolute;z-index:1;bottom:11px;left:13px;color:white}
+.section-card-body{padding:0 17px 24px;position:relative;flex:1}
+.section-card-body .card-en{margin-top:17px;font-size:7px}
+.section-card-body h3{font-size:17px;margin:8px 0}
+.section-card-body p{font-size:10px;line-height:2.1;margin-bottom:14px}
+.section-card-body .card-arrow{bottom:12px;left:15px}
+.home-sections{padding-top:68px;padding-bottom:68px}
+.about-home{background:#eee9df}
+.about-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.about-tags span{border:1px solid #d0c9bb;padding:6px 11px;color:#65665b;font-size:10px}
+.contact-home p{font-size:11px;color:var(--muted);margin:8px 0 0}
+.contact-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.social-link{display:flex;align-items:center;gap:8px;color:var(--olive2);font-size:12px;border-bottom:1px solid #c9c5b8;padding:10px 0}
+.social-link span{font:10px 'DM Sans',sans-serif;color:#8b897f}
+.contact-page-links{padding:55px 10% 25px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.contact-page-card{background:#eee9df;border:1px solid var(--line);padding:25px;display:flex;align-items:center;gap:17px;min-height:130px}
+.contact-page-card>span{width:48px;height:48px;display:grid;place-items:center;border:1px solid #a8aa94;color:var(--olive)}
+.contact-page-card div{flex:1}
+.contact-page-card small{font:8px 'DM Sans',sans-serif;letter-spacing:.14em;color:var(--olive)}
+.contact-page-card h2{font-size:20px;font-weight:500;margin:6px 0}
+.contact-page-card p{font-size:11px;color:var(--muted);margin:0}
+.contact-page-card>b{color:var(--olive);font-weight:400}
+.contact-pending{opacity:.8}
+.contact-note{margin:10px 10% 65px;padding:28px 30px;background:#e9e4d9}
+.contact-note h2{font-size:19px;font-weight:500}
+.contact-note p{font-size:12px;line-height:2.3;color:var(--muted);margin:0}
+@media(max-width:900px){.section-grid-seven{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-redesign{padding-left:7%;padding-right:7%}}
+@media(max-width:700px){.hero-redesign{grid-template-columns:1fr;padding:48px 6% 25px}.hero-photo{height:270px;grid-row:2}.hero-index{grid-column:auto}.section-grid-seven{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.section-card-photo{height:120px}.section-card-body{padding:0 12px 25px}.section-card-body h3{font-size:15px}.section-card-body p{font-size:10px}.contact-home{padding:32px 7%}.contact-actions{width:100%;align-items:flex-start;flex-direction:column;gap:8px}.contact-page-links{padding:35px 7% 20px;grid-template-columns:1fr}.contact-note{margin:10px 7% 50px;padding:23px}.social-link{width:100%}}
