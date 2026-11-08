@@ -1,36 +1,34 @@
 # Zahra Rastegar — Digital Magazine
 
-**Tagline:** دانش، اندیشه، زندگی  
-**Focus:** Psychology · Research · Knowledge · Culture
+A Persian-first editorial magazine focused on psychology, research, knowledge, and culture.
 
-A Persian-first, bilingual digital magazine centered on psychology, with complementary coverage of Islamic studies, humanities, education, books, film, animation, and research.
+## Run locally
 
-## Editorial principles
-- Evidence-aware content with transparent references and authorship.
-- Clear distinction between research findings, interpretation, and personal reflection.
-- Persian-first publishing with an English edition.
-- Editorial review before contributor submissions are published.
-- No automated diagnosis or clinical assessment presented as a substitute for a qualified professional.
+```bash
+npm install
+npm run dev
+```
 
-## Main sections
-- Home and magazine
-- Psychology encyclopedia and specializations
-- Research and publications
-- Islamic studies
-- Books and library
-- Learning and education
-- Film, animation, video, and podcast
-- Children and teenagers
-- Events and workshops
-- About Zahra Rastegar
-- Products and Telegram orders
-- Collaboration, article submissions, and contact
+Open http://localhost:3000.
 
-## Planned capabilities
-Search and filters, article pages with references, related content, bookmarks, comments, user accounts, reviewed contributor submissions, bilingual content, downloadable resources, product catalogue, and responsive layouts.
+## Build
 
-## Technical direction
-Next.js, TypeScript, and Tailwind CSS for the web application. Supabase may provide authentication, database, and file storage after validating free-tier limits and deployment requirements. Hosting and domain choices will be confirmed before launch.
+```bash
+npm run build
+```
 
-## Project status
-Project requirements collected. Brand direction and information architecture are being prepared. Implementation will be tracked in this repository.
+## Current implementation
+- Responsive Persian RTL editorial homepage
+- Brand system with warm ivory, olive, and brown palette
+- Magazine sections, psychology encyclopedia entry points, research, books, media, and about sections
+- Next.js App Router with TypeScript
+
+## Next milestones
+1. Add article content models and dynamic article pages.
+2. Add search and taxonomy filters.
+3. Add Supabase authentication and editorial CMS.
+4. Add reviewed contributor submissions.
+5. Add product catalogue and Telegram order links.
+6. Configure deployment and custom domain.
+
+Content cards on the initial homepage are editorial placeholders, not published scientific articles. Replace them with reviewed, referenced content before public launch.
