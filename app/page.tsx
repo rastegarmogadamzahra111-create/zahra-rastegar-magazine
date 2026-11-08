@@ -15,7 +15,7 @@ const sections = [
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
   return <div className={`editorial-image ${className}`} aria-label={alt}>
-    <img src={src} alt={alt} loading="lazy" onError={(event)=>{event.currentTarget.style.display="none";}} />
+    <img src={src} alt={alt} loading="lazy" />
     <span className="image-fallback-mark" aria-hidden="true">ZR</span>
   </div>;
 }
