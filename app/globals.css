@@ -360,3 +360,12 @@ h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:50
  .redesign .footer-social{gap:10px;flex-direction:column}
 }
 @media(max-width:390px){.cover-wordmark{font-size:48px}.department-grid{grid-template-columns:1fr}.department-photo{height:180px}.shop-story-grid{grid-template-columns:1fr}.shop-feature{grid-column:auto}}
+
+
+.redesign .mobile-nav{display:none}
+@media(max-width:700px){
+ .redesign .mobile-nav{display:flex;align-items:center;gap:22px;overflow-x:auto;white-space:nowrap;padding:11px 6%;background:#f1eadf;border-bottom:1px solid #ded3c3;scrollbar-width:none}
+ .redesign .mobile-nav::-webkit-scrollbar{display:none}
+ .redesign .mobile-nav a{font-size:10px;color:#536153;flex:0 0 auto}
+ .redesign .site-header{min-height:68px}
+}
