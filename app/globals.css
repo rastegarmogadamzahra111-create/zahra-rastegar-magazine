@@ -159,3 +159,18 @@ h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:50
   .section-grid-seven{grid-template-columns:repeat(2,minmax(0,1fr))}
   .section-card-photo{height:132px}
 }
+
+
+/* Image-led product editorial cards */
+.product-teaser{overflow:hidden;padding-top:0}
+.product-teaser-image{height:152px;width:calc(100% + 56px);margin:0 -28px 23px;overflow:hidden;background:linear-gradient(135deg,#d9d3c5,#aeb39d)}
+.product-teaser-image img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.72);transition:transform .55s ease}
+.product-teaser:hover .product-teaser-image img{transform:scale(1.045)}
+.product-teaser .product-symbol{margin-bottom:13px}
+.hero-photo img{object-position:center 52%;filter:saturate(.76) contrast(.98)}
+.section-card-photo img{object-position:center center}
+.section-card-photo,.hero-photo,.product-teaser-image{background-image:linear-gradient(135deg,#e6dfd1,#c5c9b6)}
+@media(max-width:700px){
+ .product-teaser-image{height:170px;width:calc(100% + 56px);margin:0 -28px 20px}
+ .product-teaser{padding-bottom:25px}
+}
