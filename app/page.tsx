@@ -53,7 +53,7 @@ export default function Home() {
       <section className="section-block" id="magazine">
         <div className="section-heading"><div><span className="eyebrow">EXPLORE THE MAGAZINE</span><h2>جهان‌های <em>دانش</em></h2></div><a className="text-link" href="#all-sections">همه بخش‌ها <ArrowLeft size={16}/></a></div>
         <div className="section-grid" id="all-sections">
-          {sections.map((item) => { const Icon = item.icon; return <a className="section-card" href={item.n === "۰۱" ? "/psychology" : item.n === "۰۲" ? "/research" : item.n === "۰۳" ? "/library" : "/media"} key={item.n}><div className="card-top"><span>{item.n}</span><Icon size={24} strokeWidth={1.35}/></div><span className="card-en">{item.en}</span><h3>{item.title}</h3><p>{item.desc}</p><span className="card-arrow"><ArrowLeft size={18}/></span></a>; })}
+          {sections.map((item) => { const Icon = item.icon; return <a className="section-card" href={item.n === "۰۱" ? "/zahra-rastegar-magazine/psychology" : item.n === "۰۲" ? "/zahra-rastegar-magazine/research" : item.n === "۰۳" ? "/zahra-rastegar-magazine/library" : "/zahra-rastegar-magazine/media"} key={item.n}><div className="card-top"><span>{item.n}</span><Icon size={24} strokeWidth={1.35}/></div><span className="card-en">{item.en}</span><h3>{item.title}</h3><p>{item.desc}</p><span className="card-arrow"><ArrowLeft size={18}/></span></a>; })}
         </div>
       </section>
 
