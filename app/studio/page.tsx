@@ -1,7 +1,7 @@
 "use client";
 import "./studio.css";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { supabase, isSupabaseConfigured } from "../../lib/supabase";
 import { ArrowRight, ImagePlus, LogOut, Plus, Save, Trash2, UploadCloud } from "lucide-react";
@@ -26,8 +26,8 @@ export default function StudioPage(){
  useEffect(()=>{if(!supabase)return;supabase.auth.getSession().then(({data})=>setSession(data.session));const {data:{subscription}}=supabase.auth.onAuthStateChange((_event,s)=>setSession(s));return()=>subscription.unsubscribe()},[]);
  useEffect(()=>{if(session)loadPosts()},[session]);
  const setField=(key:keyof typeof emptyPost,value:string)=>setForm(old=>({...old,[key]:value}));
- async function login(e:React.FormEvent){e.preventDefault();if(!supabase)return;setBusy(true);setMessage("");const {data,error}=await supabase.auth.signInWithPassword({email,password});setBusy(false);if(error)setMessage("ورود انجام نشد: "+error.message);else setSession(data.session)}
- async function save(e:React.FormEvent){e.preventDefault();if(!supabase)return;setBusy(true);setMessage("");
+ async function login(e:FormEvent){e.preventDefault();if(!supabase)return;setBusy(true);setMessage("");const {data,error}=await supabase.auth.signInWithPassword({email,password});setBusy(false);if(error)setMessage("ورود انجام نشد: "+error.message);else setSession(data.session)}
+ async function save(e:FormEvent){e.preventDefault();if(!supabase)return;setBusy(true);setMessage("");
   let imageUrl=form.cover_image;
   if(imageFile){const ext=imageFile.name.split(".").pop()||"jpg";const path=`${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;const {error:upErr}=await supabase.storage.from("magazine-media").upload(path,imageFile,{upsert:false});if(upErr){setBusy(false);setMessage("بارگذاری تصویر ناموفق بود: "+upErr.message);return;}imageUrl=supabase.storage.from("magazine-media").getPublicUrl(path).data.publicUrl;}
   const payload={...form,cover_image:imageUrl,slug:form.slug.trim()||form.title.trim().toLowerCase().replace(/[^a-z0-9آ-ی]+/g,"-").replace(/^-|-$/g,"")};
