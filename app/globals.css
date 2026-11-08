@@ -103,3 +103,47 @@ p,li,.hero-lead,.inner-hero>p,.content-intro p,.content-intro li{
 .contact-note p{font-size:12px;line-height:2.3;color:var(--muted);margin:0}
 @media(max-width:900px){.section-grid-seven{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-redesign{padding-left:7%;padding-right:7%}}
 @media(max-width:700px){.hero-redesign{grid-template-columns:1fr;padding:48px 6% 25px}.hero-photo{height:270px;grid-row:2}.hero-index{grid-column:auto}.section-grid-seven{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.section-card-photo{height:120px}.section-card-body{padding:0 12px 25px}.section-card-body h3{font-size:15px}.section-card-body p{font-size:10px}.contact-home{padding:32px 7%}.contact-actions{width:100%;align-items:flex-start;flex-direction:column;gap:8px}.contact-page-links{padding:35px 7% 20px;grid-template-columns:1fr}.contact-note{margin:10px 7% 50px;padding:23px}.social-link{width:100%}}
+
+/* Editorial redesign: distinctive Persian typography, refined image cards and layout */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Arabic:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+:root{--font-display:'Noto Serif Arabic','Vazirmatn',serif}
+h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:500!important;letter-spacing:-.035em!important}
+.hero h1{font-size:clamp(52px,6.4vw,82px);line-height:1.55!important}
+.section-heading h2,.psychology-copy h2,.about-copy h2,.editorial-feature h2{font-family:var(--font-display)!important}
+.brand-name{font-family:'DM Sans',Arial,sans-serif!important;font-size:15px!important;font-weight:600!important;letter-spacing:.035em!important;text-transform:none}
+.brand-name small{font-size:8px!important;letter-spacing:.18em!important}
+.brand-mark{font-family:'DM Sans',Arial,sans-serif!important;font-style:normal!important;font-weight:500}
+.hero-photo{min-height:420px;background:#d8d5c8}
+.hero-photo img,.section-card-photo img{display:block!important;opacity:1!important;visibility:visible!important}
+.hero-photo img{object-position:center 48%}
+.section-grid-seven{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.section-grid-seven .section-card{overflow:hidden;border-radius:2px;box-shadow:0 8px 24px rgba(43,42,34,.045)}
+.section-card-photo{height:170px}
+.section-card-photo img{transition:transform .6s ease,filter .6s ease}
+.section-card-image:hover .section-card-photo img{transform:scale(1.055);filter:saturate(.9)}
+.section-card-body h3{font-family:var(--font-display)!important;font-size:18px!important}
+.section-card-body p{min-height:44px}
+.home-sections{padding-top:88px;padding-bottom:90px}
+.section-heading h2{font-size:42px}
+.hero-redesign{padding-top:76px;padding-bottom:52px}
+.hero-photo{box-shadow:18px 18px 0 #e8e1d4}
+.hero-photo-caption{font-family:'DM Sans',sans-serif!important}
+.announcement{height:38px}
+.site-header{min-height:92px}
+.desktop-nav{gap:20px;font-size:11px}
+.desktop-nav a{white-space:nowrap;position:relative;padding:9px 0}
+.desktop-nav a:after{content:"";position:absolute;bottom:2px;right:0;width:0;height:1px;background:var(--olive);transition:width .25s}
+.desktop-nav a:hover:after{width:100%}
+@media(max-width:1100px){.desktop-nav{gap:12px;font-size:10px}.brand-name{font-size:13px!important}}
+@media(max-width:900px){.section-grid-seven{grid-template-columns:repeat(2,minmax(0,1fr))}.section-card-photo{height:155px}}
+@media(max-width:700px){.hero-photo{height:290px;min-height:290px;box-shadow:9px 9px 0 #e8e1d4}.hero h1{font-size:54px!important}.section-grid-seven{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.section-card-photo{height:125px}.section-card-body h3{font-size:15px!important}.site-header{gap:12px}.brand-name{font-size:12px!important}.desktop-nav{gap:17px}.home-sections{padding-top:60px;padding-bottom:62px}}
+.spark-grid{padding:35px 10% 90px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.spark-card{min-height:260px;padding:27px 25px;background:#ebe5d9;border:1px solid #d8d1c4;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.spark-card:nth-child(2n){background:#e4e6dc}
+.spark-top{display:flex;justify-content:space-between;color:#77766d;font:10px 'DM Sans',sans-serif;letter-spacing:.12em}
+.spark-star{font-size:27px;color:#778064;margin:22px 0 10px}
+.spark-card h2{font:500 21px var(--font-display)!important;line-height:1.9;margin:0 0 9px}
+.spark-card p{font-size:12px;line-height:2.3;color:#68675e;margin:0 0 22px}
+.spark-signature{margin-top:auto;font:9px 'DM Sans',sans-serif;letter-spacing:.16em;color:#7a806d}
+@media(max-width:800px){.spark-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:25px 7% 60px}}
+@media(max-width:520px){.spark-grid{grid-template-columns:1fr}.spark-card{min-height:220px}}
