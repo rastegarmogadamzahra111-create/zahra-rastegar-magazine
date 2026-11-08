@@ -24,7 +24,7 @@ export default function Home() {
           <span className="brand-mark">ZR</span><span className="brand-name">ZAHRA RASTEGAR<small>DIGITAL MAGAZINE</small></span>
         </a>
         <nav className="desktop-nav" aria-label="منوی اصلی">
-          <a href="/articles">مجله</a><a href="/psychology">دانشنامه روان‌شناسی</a><a href="/research">پژوهش</a><a href="/library">کتابخانه</a><a href="/media">رسانه</a><a href="/about">درباره</a>
+          <a href="/zahra-rastegar-magazine/articles">مجله</a><a href="/zahra-rastegar-magazine/psychology">دانشنامه روان‌شناسی</a><a href="/zahra-rastegar-magazine/research">پژوهش</a><a href="/zahra-rastegar-magazine/library">کتابخانه</a><a href="/zahra-rastegar-magazine/media">رسانه</a><a href="/zahra-rastegar-magazine/about">درباره</a>
         </nav>
         <div className="header-actions"><button className="icon-button" aria-label="جست‌وجو"><Search size={18}/></button><a className="language" href="#english">EN</a><button className="mobile-menu" aria-label="باز کردن منو"><Menu size={22}/></button></div>
       </header>
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       <section className="psychology-band" id="psychology">
-        <div className="psychology-copy"><span className="eyebrow light">THE PSYCHOLOGY ENCYCLOPEDIA</span><h2>روان‌شناسی را<br/><em>از نو کشف کن.</em></h2><p>دانشنامه‌ای برای آشنایی روشن و مرحله‌به‌مرحله با مفاهیم، نظریه‌ها، مکاتب و گرایش‌های روان‌شناسی؛ همراه با مثال و مسیر مطالعه.</p><a className="button-light" href="/psychology">کاوش در دانشنامه <ArrowLeft size={17}/></a></div>
+        <div className="psychology-copy"><span className="eyebrow light">THE PSYCHOLOGY ENCYCLOPEDIA</span><h2>روان‌شناسی را<br/><em>از نو کشف کن.</em></h2><p>دانشنامه‌ای برای آشنایی روشن و مرحله‌به‌مرحله با مفاهیم، نظریه‌ها، مکاتب و گرایش‌های روان‌شناسی؛ همراه با مثال و مسیر مطالعه.</p><a className="button-light" href="/zahra-rastegar-magazine/psychology">کاوش در دانشنامه <ArrowLeft size={17}/></a></div>
         <div className="psychology-visual"><div className="brain-ring ring-a"/><div className="brain-ring ring-b"/><div className="brain-core"><Brain size={76} strokeWidth={0.8}/></div><span className="visual-label label-a">MIND</span><span className="visual-label label-b">BEHAVIOR</span><span className="visual-label label-c">DEVELOPMENT</span></div>
       </section>
 
@@ -69,7 +69,7 @@ export default function Home() {
       </section>
 
       <section className="featured-block" id="research">
-        <div className="section-heading"><div><span className="eyebrow">EDITOR'S SELECTION</span><h2>برای <em>خواندن</em></h2></div><a className="text-link" href="/articles">آرشیو مطالب <ArrowLeft size={16}/></a></div>
+        <div className="section-heading"><div><span className="eyebrow">EDITOR'S SELECTION</span><h2>برای <em>خواندن</em></h2></div><a className="text-link" href="/zahra-rastegar-magazine/articles">آرشیو مطالب <ArrowLeft size={16}/></a></div>
         <div className="article-grid">{articles.map((article) => <article className="article-card" key={article.number}><div className="article-image"><span>{article.number}</span><div className="image-shape"/></div><div className="article-meta"><span>{article.category}</span><span>{article.time}</span></div><h3>{article.title}</h3><p>{article.desc}</p><a href="#contact" className="article-link">به‌زودی در مجله <ArrowLeft size={15}/></a></article>)}</div>
       </section>
 
@@ -79,7 +79,7 @@ export default function Home() {
 
       <section className="about-block" id="about"><div className="about-monogram">ZR<span>FOUNDER & EDITOR</span></div><div className="about-copy"><span className="eyebrow">A PERSONAL EDITORIAL PROJECT</span><h2>روایتِ یک مسیر<br/><em>یادگیری و جست‌وجو.</em></h2><p>Zahra Rastegar مجله‌ای مستقل با تمرکز بر روان‌شناسی و پیوندهای آن با پژوهش، علوم انسانی و زندگی روزمره است؛ مسیری که با کنجکاوی آغاز می‌شود و با مشارکت و یادگیری جمعی گسترش می‌یابد.</p><a href="#contact" className="text-link">بیشتر درباره این مجموعه <ArrowLeft size={16}/></a></div></section>
 
-      <footer id="contact"><div className="footer-top"><a className="brand footer-brand" href="#"><span className="brand-mark">ZR</span><span className="brand-name">ZAHRA RASTEGAR<small>DIGITAL MAGAZINE</small></span></a><p>دانش، اندیشه، زندگی</p></div><div className="footer-bottom"><span>© 2026 ZAHRA RASTEGAR. ALL RIGHTS RESERVED.</span><span>یک مجله مستقل فارسی‌زبان</span><a href="/contact">ارتباط با مجله</a></div></footer>
+      <footer id="contact"><div className="footer-top"><a className="brand footer-brand" href="#"><span className="brand-mark">ZR</span><span className="brand-name">ZAHRA RASTEGAR<small>DIGITAL MAGAZINE</small></span></a><p>دانش، اندیشه، زندگی</p></div><div className="footer-bottom"><span>© 2026 ZAHRA RASTEGAR. ALL RIGHTS RESERVED.</span><span>یک مجله مستقل فارسی‌زبان</span><a href="/zahra-rastegar-magazine/contact">ارتباط با مجله</a></div></footer>
     </main>
   );
 }
