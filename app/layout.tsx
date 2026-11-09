@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Zahra Rastegar | مجله دیجیتال",
   description: "مجله‌ای برای روان‌شناسی، پژوهش، دانش و زندگی؛ دانش، اندیشه، زندگی.",
+  verification: {
+    google: "6nUB-lfQUP21BFVzEO-nKYFaMxZZrqAS8WV_c0pYMbI",
+  },
   openGraph: {
     title: "Zahra Rastegar — Digital Magazine",
     description: "دانش، اندیشه، زندگی",
