@@ -468,7 +468,7 @@ h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:50
 .redesign .desktop-nav a{color:#383b32}
 .redesign .desktop-nav a:hover{color:#9b7954}
 .redesign .language{border:0;color:#344536;font-weight:700}
-.cover-story{min-height:440px;padding:55px 8% 55px;display:flex;align-items:center;justify-content:flex-start;direction:rtl;background:linear-gradient(90deg,rgba(34,48,37,.04) 0%,rgba(35,50,39,.12) 43%,rgba(36,51,39,.94) 68%,#293b30 100%),url('/zahra-rastegar-magazine/editorial/journal.svg') center/cover no-repeat}
+.cover-story{min-height:440px;padding:55px 8% 55px;display:flex;align-items:center;justify-content:flex-start;direction:rtl;background:linear-gradient(90deg,rgba(34,48,37,.04) 0%,rgba(35,50,39,.12) 43%,rgba(36,51,39,.94) 68%,#293b30 100%),url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1800&q=88') center/cover no-repeat}
 .cover-copy{width:min(570px,49%);margin-right:auto;margin-left:0;color:#fbf4e8;text-align:right;padding:5px 0}
 .cover-overline{color:#e0d2bc;font-size:11px;justify-content:flex-start}
 .overline-dot{background:#c7a77d}
@@ -543,7 +543,7 @@ h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:50
 .redesign footer{background:#26372c;padding:38px 5% 20px}
 @media(max-width:950px){.redesign .desktop-nav{gap:8px;font-size:10px}.cover-story{padding:45px 6%;min-height:390px}.department-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.editor-pick{margin-inline:3%}}
 @media(max-width:680px){
-.redesign .announcement{padding:0 5%}.redesign .site-header{padding:12px 5%;height:auto;min-height:68px;flex-wrap:wrap}.redesign .desktop-nav{order:3;width:100%;overflow-x:auto;gap:18px;padding:8px 0 3px}.cover-story{min-height:420px;padding:38px 7%;background-position:35% center;background-image:linear-gradient(90deg,rgba(35,50,39,.18),rgba(36,51,39,.91)),url('/zahra-rastegar-magazine/editorial/journal.svg')}.cover-copy{width:100%;margin:0}.cover-story h1{font-size:39px}.cover-lead{font-size:12px}.topic-marquee{grid-template-columns:repeat(2,1fr);padding:13px 5%;gap:8px}.topic-marquee span{min-height:70px;font-size:11px}.editor-pick{margin:10px 5% 35px;grid-template-columns:1fr}.editor-pick-image{min-height:210px;height:210px}.editor-pick-copy{padding:27px 23px}.editor-pick-copy h2{font-size:25px}.departments{padding:35px 5% 55px}.section-heading{gap:10px}.section-heading h2{font-size:27px}.department-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.department-photo{height:120px}.department-info{padding:13px 12px 20px;min-height:145px}.department-info h3{font-size:14px}.department-info p{font-size:10px}.department-en{font-size:7px}.thought-break{margin:0 5% 35px;padding:35px 15px}.thought-break p{font-size:19px}.shop-story{padding:38px 5%}.shop-story-grid{grid-template-columns:1fr 1fr;gap:10px}.shop-feature{grid-column:1/-1;min-height:230px}.shop-side{min-height:190px}.shop-side h3{font-size:15px;right:12px}.about-editor{margin:38px 5%;padding:30px 7%;grid-template-columns:1fr;gap:22px}.about-editor-mark{width:130px;height:130px;margin:auto}.about-editor-mark>span{font-size:42px}.about-editor-copy h2{font-size:24px}.about-editor-flower{font-size:55px;left:8px}.contact-editorial{margin:0 5% 35px;padding:28px 7%;flex-direction:column;align-items:flex-start}.contact-editorial h2{font-size:20px}.contact-editorial-links{gap:8px}.contact-editorial-links a{font-size:10px;padding:9px 12px}
+.redesign .announcement{padding:0 5%}.redesign .site-header{padding:12px 5%;height:auto;min-height:68px;flex-wrap:wrap}.redesign .desktop-nav{order:3;width:100%;overflow-x:auto;gap:18px;padding:8px 0 3px}.cover-story{min-height:420px;padding:38px 7%;background-position:35% center;background-image:linear-gradient(90deg,rgba(35,50,39,.18),rgba(36,51,39,.91)),url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1800&q=88')}.cover-copy{width:100%;margin:0}.cover-story h1{font-size:39px}.cover-lead{font-size:12px}.topic-marquee{grid-template-columns:repeat(2,1fr);padding:13px 5%;gap:8px}.topic-marquee span{min-height:70px;font-size:11px}.editor-pick{margin:10px 5% 35px;grid-template-columns:1fr}.editor-pick-image{min-height:210px;height:210px}.editor-pick-copy{padding:27px 23px}.editor-pick-copy h2{font-size:25px}.departments{padding:35px 5% 55px}.section-heading{gap:10px}.section-heading h2{font-size:27px}.department-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.department-photo{height:120px}.department-info{padding:13px 12px 20px;min-height:145px}.department-info h3{font-size:14px}.department-info p{font-size:10px}.department-en{font-size:7px}.thought-break{margin:0 5% 35px;padding:35px 15px}.thought-break p{font-size:19px}.shop-story{padding:38px 5%}.shop-story-grid{grid-template-columns:1fr 1fr;gap:10px}.shop-feature{grid-column:1/-1;min-height:230px}.shop-side{min-height:190px}.shop-side h3{font-size:15px;right:12px}.about-editor{margin:38px 5%;padding:30px 7%;grid-template-columns:1fr;gap:22px}.about-editor-mark{width:130px;height:130px;margin:auto}.about-editor-mark>span{font-size:42px}.about-editor-copy h2{font-size:24px}.about-editor-flower{font-size:55px;left:8px}.contact-editorial{margin:0 5% 35px;padding:28px 7%;flex-direction:column;align-items:flex-start}.contact-editorial h2{font-size:20px}.contact-editorial-links{gap:8px}.contact-editorial-links a{font-size:10px;padding:9px 12px}
 }
 
 /* Readability and stronger editorial contrast — November 2026 */
@@ -571,7 +571,7 @@ html,body{color:#20271f;background:#fbf7ef}
 .redesign .thought-break p{color:#26382c}
 .redesign .shop-story{background:#eee1d0}
 .redesign .contact-editorial{background:#263b2e}
-.redesign .cover-story{background-image:linear-gradient(90deg,rgba(25,38,29,.22) 0%,rgba(25,38,29,.48) 38%,rgba(25,38,29,.96) 70%,#1f3428 100%),url('/zahra-rastegar-magazine/editorial/journal.svg')}
+.redesign .cover-story{background-image:linear-gradient(90deg,rgba(25,38,29,.22) 0%,rgba(25,38,29,.48) 38%,rgba(25,38,29,.96) 70%,#1f3428 100%),url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1800&q=88')}
 .redesign .cover-story h1{font-size:clamp(42px,4.6vw,64px);font-weight:700}
 .redesign .cover-lead{font-size:15px;color:#fff4e5;line-height:2.3}
 .redesign .cover-wordmark{font-size:29px}
@@ -739,3 +739,12 @@ html,body{color:#20271f;background:#fbf7ef}
 .article-pdf-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 8px;padding-top:20px;border-top:1px solid #d8d1c7}
 .article-pdf-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:8px;background:#1d2b3d;color:#fbf8f2;font-size:13px;font-weight:600}
 .article-pdf-actions a+a{background:#bd9060;color:#1d2b3d}
+
+
+/* Editorial photography refresh — November 2026 */
+.redesign .cover-story{background-image:linear-gradient(90deg,rgba(20,34,31,.08) 0%,rgba(20,34,31,.56) 44%,rgba(20,34,31,.94) 76%,#1d2b3d 100%),url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1800&q=88');background-size:cover;background-position:center 48%}
+.redesign .cover-story .cover-visual{background:transparent}
+.editorial-image{overflow:hidden;background:#e8e0d3}
+.editorial-image img{filter:saturate(.82) contrast(1.02);transition:transform .65s ease,filter .65s ease}
+.department-card:hover .editorial-image img,.shop-feature:hover .editorial-image img,.shop-side:hover .editorial-image img{filter:saturate(.98) contrast(1.03)}
+@media(max-width:700px){.redesign .cover-story{background-image:linear-gradient(90deg,rgba(20,34,31,.30),rgba(20,34,31,.91)),url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1800&q=88');background-position:center;background-size:cover}}
