@@ -545,3 +545,55 @@ h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:50
 @media(max-width:680px){
 .redesign .announcement{padding:0 5%}.redesign .site-header{padding:12px 5%;height:auto;min-height:68px;flex-wrap:wrap}.redesign .desktop-nav{order:3;width:100%;overflow-x:auto;gap:18px;padding:8px 0 3px}.cover-story{min-height:420px;padding:38px 7%;background-position:35% center;background-image:linear-gradient(90deg,rgba(35,50,39,.18),rgba(36,51,39,.91)),url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85')}.cover-copy{width:100%;margin:0}.cover-story h1{font-size:39px}.cover-lead{font-size:12px}.topic-marquee{grid-template-columns:repeat(2,1fr);padding:13px 5%;gap:8px}.topic-marquee span{min-height:70px;font-size:11px}.editor-pick{margin:10px 5% 35px;grid-template-columns:1fr}.editor-pick-image{min-height:210px;height:210px}.editor-pick-copy{padding:27px 23px}.editor-pick-copy h2{font-size:25px}.departments{padding:35px 5% 55px}.section-heading{gap:10px}.section-heading h2{font-size:27px}.department-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.department-photo{height:120px}.department-info{padding:13px 12px 20px;min-height:145px}.department-info h3{font-size:14px}.department-info p{font-size:10px}.department-en{font-size:7px}.thought-break{margin:0 5% 35px;padding:35px 15px}.thought-break p{font-size:19px}.shop-story{padding:38px 5%}.shop-story-grid{grid-template-columns:1fr 1fr;gap:10px}.shop-feature{grid-column:1/-1;min-height:230px}.shop-side{min-height:190px}.shop-side h3{font-size:15px;right:12px}.about-editor{margin:38px 5%;padding:30px 7%;grid-template-columns:1fr;gap:22px}.about-editor-mark{width:130px;height:130px;margin:auto}.about-editor-mark>span{font-size:42px}.about-editor-copy h2{font-size:24px}.about-editor-flower{font-size:55px;left:8px}.contact-editorial{margin:0 5% 35px;padding:28px 7%;flex-direction:column;align-items:flex-start}.contact-editorial h2{font-size:20px}.contact-editorial-links{gap:8px}.contact-editorial-links a{font-size:10px;padding:9px 12px}
 }
+
+/* Readability and stronger editorial contrast — November 2026 */
+html,body{color:#20271f;background:#fbf7ef}
+.redesign{color:#20271f;background:#fbf7ef}
+.redesign .site-header{min-height:84px;height:auto;padding-top:12px;padding-bottom:12px;gap:20px}
+.redesign .desktop-nav{display:flex;flex:1;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 15px;white-space:normal;font-size:12px;line-height:1.9}
+.redesign .desktop-nav a{color:#26382c;font-weight:600;text-shadow:none}
+.redesign .desktop-nav a:hover{color:#a45d3d}
+.redesign .brand-name{font-size:21px;color:#26382c}
+.redesign .brand-name small{color:#655b4e}
+.redesign .announcement{font-size:11px}
+.redesign .section-kicker,.redesign .department-en{color:#765536;font-weight:700}
+.redesign .section-heading h2,.redesign .editor-pick-copy h2,.redesign .about-editor-copy h2{color:#26382c}
+.redesign .section-heading>p,.redesign .editor-pick-copy p,.redesign .about-editor-copy p{color:#514b41;font-size:13px;line-height:2.35}
+.redesign .department-info h3{color:#25382b;font-size:17px;font-weight:700}
+.redesign .department-info p{color:#514b41;font-size:12px;line-height:2.15}
+.redesign .department-en{font-size:10px}
+.redesign .department-card{border-color:#dfd1bd;box-shadow:0 7px 24px #3b30231c}
+.redesign .department-photo{height:185px}
+.redesign .topic-marquee span{color:#2d382d;background:linear-gradient(145deg,#f0dfc9,#e6d2b9);font-weight:700;font-size:14px}
+.redesign .editor-pick{background:#eee0ce}
+.redesign .editor-pick-copy h2{font-size:clamp(27px,2.5vw,36px)}
+.redesign .thought-break{background:#e4d4bf;color:#26382c}
+.redesign .thought-break p{color:#26382c}
+.redesign .shop-story{background:#eee1d0}
+.redesign .contact-editorial{background:#263b2e}
+.redesign .cover-story{background-image:linear-gradient(90deg,rgba(25,38,29,.22) 0%,rgba(25,38,29,.48) 38%,rgba(25,38,29,.96) 70%,#1f3428 100%),url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=2200&q=90')}
+.redesign .cover-story h1{font-size:clamp(42px,4.6vw,64px);font-weight:700}
+.redesign .cover-lead{font-size:15px;color:#fff4e5;line-height:2.3}
+.redesign .cover-wordmark{font-size:29px}
+.redesign .cover-button{font-size:13px;font-weight:700}
+.redesign .cover-text-link{font-size:13px;font-weight:600}
+.redesign .footer-links{color:#f4e9d8;font-size:12px;line-height:2.2}
+.redesign .footer-bottom{color:#e0d5c4}
+.inner-page{background:#fbf7ef;color:#263228}
+.inner-hero{background:#e8d9c5;border-bottom:1px solid #cdb99f}
+.inner-hero h1{color:#26382c;font-weight:700}
+.inner-hero>p{color:#49483f;font-size:15px}
+.collection-hero{background:#e9ddcc}
+.collection-hero h2,.collection-heading h2{color:#26382c;font-weight:700}
+.collection-hero p{color:#4f4a40;font-size:13px}
+.collection-kicker,.collection-heading>div>span{color:#855637;font-weight:700}
+.collection-empty{color:#354433;background:#e8ddcc}
+.collection-empty h3,.collection-empty p{color:#45483e}
+.published-card{border:1px solid #dfd2c1;box-shadow:0 8px 25px #30271c12}
+.published-copy h2{color:#25382b;font-weight:700}
+.published-copy p{color:#514c42;font-size:13px}
+.test-safety-note{margin:0 8.5% 30px;padding:22px 26px;background:#e5eddf;border-right:5px solid #58704f;color:#26382c}
+.test-safety-note b{font-size:15px}
+.test-safety-note p{margin:8px 0 0;font-size:13px;line-height:2.2;color:#414b3c}
+@media(max-width:950px){.redesign .desktop-nav{gap:6px 10px;font-size:11px}.redesign .site-header{align-items:flex-start}.redesign .department-photo{height:155px}}
+@media(max-width:680px){.redesign .desktop-nav{flex-wrap:nowrap;justify-content:flex-start;white-space:nowrap;overflow-x:auto;width:100%;padding:8px 0}.redesign .site-header{align-items:center}.redesign .department-photo{height:135px}.test-safety-note{margin:0 6% 22px;padding:18px}}

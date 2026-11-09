@@ -3,7 +3,7 @@ import {useEffect,useState} from "react";
 import Link from "next/link";
 import {PageFrame} from "./site-shell";
 import {supabase} from "../../lib/supabase";
-import {ArrowLeft,Headphones,Mic2,BookOpen,Brain,ScrollText,BriefcaseBusiness,Bell} from "lucide-react";
+import {ArrowLeft,Headphones,Mic2,BookOpen,Brain,ScrollText,BriefcaseBusiness,Bell,Baby,ClipboardCheck,ClipboardList} from "lucide-react";
 type Post={id:string;title:string;slug:string;category:string;excerpt:string;content:string;cover_image:string|null;created_at:string};
 const config:Record<string,{title:string;en:string;lead:string;categories:string[];image:string;icon:any}> = {
  podcasts:{title:"پادکست‌ها",en:"LISTEN & REFLECT",lead:"گفت‌وگوها و روایت‌های شنیداری درباره ذهن، معنا، دانش و زندگی.",categories:["پادکست","پادکست‌ها"],image:"https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1400&q=85",icon:Headphones},
@@ -20,7 +20,7 @@ export function CollectionPage({slug}:{slug:string}){
  const Icon=cfg.icon;
  return <PageFrame eyebrow={cfg.en} title={cfg.title} lead={cfg.lead}>
  <section className="collection-hero"><div><span className="collection-kicker">ZAHRA RASTEGAR · EDITORIAL COLLECTION</span><h2>برای دیدن موضوع از <em>زاویه‌ای تازه.</em></h2><p>مطالب این بخش به‌مرور توسط تحریریه و نویسندگان مهمان افزوده می‌شوند.</p></div><div className="collection-art"><img src={cfg.image} alt={cfg.title}/><span><Icon size={28}/></span></div></section>
- <section className="collection-results"><div className="collection-heading"><div><span>THE COLLECTION</span><h2>تازه‌های این بخش</h2></div><b>{posts.length} مطلب</b></div>
+ {slug==="psychology-tests"&&<aside className="test-safety-note"><b>یک نکته مهم درباره آزمون‌ها</b><p>مطالب این بخش برای آشنایی و آموزش هستند. آزمون‌های روان‌شناختی باید با توجه به نسخه معتبر، شرایط اجرا و صلاحیت تخصصی تفسیر شوند؛ نتیجه یک آزمون به‌تنهایی تشخیص یا جایگزین ارزیابی متخصص نیست.</p></aside>}\n <section className="collection-results"><div className="collection-heading"><div><span>THE COLLECTION</span><h2>تازه‌های این بخش</h2></div><b>{posts.length} مطلب</b></div>
  {loading?<p className="collection-empty">در حال دریافت محتوا...</p>:posts.length?<div className="published-grid">{posts.map(p=><article className="published-card" key={p.id}>{p.cover_image?<div className="published-image"><img src={p.cover_image} alt={p.title}/></div>:<div className="published-image"><span>ZR</span></div>}<div className="published-copy"><span>{p.category}</span><h2>{p.title}</h2><p>{p.excerpt}</p><Link href={"/articles#"+p.slug}>مشاهده در مقالات <ArrowLeft size={15}/></Link></div></article>)}</div>:<div className="collection-empty"><span>COMING INTO VIEW</span><h3>این صفحه برای نوشته‌های تازه آماده است.</h3><p>به‌زودی محتواهای منتخب این حوزه را اینجا خواهی دید.</p><Link href="/articles">رفتن به همه مقالات <ArrowLeft size={15}/></Link></div>}
  </section></PageFrame>
 }
