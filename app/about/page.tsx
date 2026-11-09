@@ -1,4 +1,5 @@
 import {PageFrame} from "../components/site-shell";
+import {ManagedEntries} from "../components/managed-entries";
 
 export default function About() {
   return (
@@ -82,6 +83,7 @@ export default function About() {
         <p className="about-signature">زهرا رستگار</p>
         <p className="about-motto">دانش، اندیشه، زندگی</p>
       </article>
+      <ManagedEntries categories={["درباره من"]} emptyTitle="یادداشت‌های تکمیلی این صفحه به‌زودی افزوده می‌شوند." />
     </PageFrame>
   );
 }
