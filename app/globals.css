@@ -734,3 +734,8 @@ html,body{color:#20271f;background:#fbf7ef}
  .redesign .department-info p{font-size:10px;line-height:1.9}
  .redesign .department-en{font-size:7px}
 }
+
+/* PDF attachment actions in article reader */
+.article-pdf-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 8px;padding-top:20px;border-top:1px solid #d8d1c7}
+.article-pdf-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:8px;background:#1d2b3d;color:#fbf8f2;font-size:13px;font-weight:600}
+.article-pdf-actions a+a{background:#bd9060;color:#1d2b3d}
