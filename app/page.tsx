@@ -3,29 +3,29 @@ import { ArrowLeft, ArrowUpLeft, BookOpen, Brain, FlaskConical, Clapperboard, Sh
 import { SiteHeader, SiteFooter } from "./components/site-shell";
 
 const sections = [
-  { n:"01", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/zahra-rastegar-magazine/editorial/journal.svg", icon:PenLine, tone:"clay" },
-  { n:"02", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان.", href:"/psychology", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:Brain, tone:"sage" },
+  { n:"01", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/zahra-rastegar-magazine/editorial/research.svg", icon:PenLine, tone:"clay" },
+  { n:"02", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان.", href:"/psychology", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:Brain, tone:"sage" },
   { n:"03", title:"پژوهش و دانش", en:"RESEARCH NOTES", desc:"پرسش علمی، روش تحقیق و خواندن شواهد.", href:"/research", image:"/zahra-rastegar-magazine/editorial/research.svg", icon:FlaskConical, tone:"blue" },
   { n:"04", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"/zahra-rastegar-magazine/editorial/library.svg", icon:BookOpen, tone:"ochre" },
   { n:"05", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"/zahra-rastegar-magazine/editorial/culture.svg", icon:Clapperboard, tone:"plum" },
   { n:"06", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/zahra-rastegar-magazine/editorial/planner.svg", icon:ShoppingBag, tone:"rose" },
-  { n:"07", title:"جرقه‌های معنا", en:"SMALL THOUGHTS", desc:"مکث‌هایی کوتاه برای دیدن دوباره زندگی.", href:"/meaning-sparks", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:Sparkles, tone:"sage" },
-  { n:"08", title:"درباره زهرا", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:PenLine, tone:"clay" },
+  { n:"07", title:"جرقه‌های معنا", en:"SMALL THOUGHTS", desc:"مکث‌هایی کوتاه برای دیدن دوباره زندگی.", href:"/meaning-sparks", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:Sparkles, tone:"sage" },
+  { n:"08", title:"درباره زهرا", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:PenLine, tone:"clay" },
   { n:"09", title:"پادکست‌ها", en:"LISTEN & REFLECT", desc:"روایت‌ها و گفت‌وگوهای شنیداری درباره انسان و زندگی.", href:"/podcasts", image:"/zahra-rastegar-magazine/editorial/culture.svg", icon:BookOpen, tone:"plum" },
   { n:"10", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/zahra-rastegar-magazine/editorial/culture.svg", icon:Brain, tone:"blue" },
-  { n:"11", title:"آیه‌نگار", en:"QURANIC REFLECTIONS", desc:"درنگی در آیات قرآن و پیوند آن‌ها با زندگی.", href:"/quran-notes", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:BookOpen, tone:"sage" },
-  { n:"12", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/zahra-rastegar-magazine/editorial/journal.svg", icon:PenLine, tone:"ochre" },
+  { n:"11", title:"آیه‌نگار", en:"QURANIC REFLECTIONS", desc:"درنگی در آیات قرآن و پیوند آن‌ها با زندگی.", href:"/quran-notes", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:BookOpen, tone:"sage" },
+  { n:"12", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/zahra-rastegar-magazine/editorial/research.svg", icon:PenLine, tone:"ochre" },
   { n:"13", title:"روان‌شناسی در میدان زندگی", en:"PSYCHOLOGY IN PRACTICE", desc:"پیوند روان‌شناسی با آموزش، پزشکی، هنر، مدیریت و حرفه‌ها.", href:"/psychology-in-life", image:"/zahra-rastegar-magazine/editorial/children.svg", icon:Brain, tone:"rose" },
-  { n:"14", title:"شاخه‌های روان‌شناسی", en:"FIELDS OF PSYCHOLOGY", desc:"آشنایی با روان‌شناسی رشد، بالینی، عمومی، شناختی و دیگر شاخه‌ها.", href:"/psychology", image:"/zahra-rastegar-magazine/editorial/mind.svg", icon:Brain, tone:"sage" },
+  { n:"14", title:"شاخه‌های روان‌شناسی", en:"FIELDS OF PSYCHOLOGY", desc:"آشنایی با روان‌شناسی رشد، بالینی، عمومی، شناختی و دیگر شاخه‌ها.", href:"/psychology", image:"/zahra-rastegar-magazine/editorial/clinical.svg", icon:Brain, tone:"sage" },
   { n:"15", title:"روان‌شناسی علمی", en:"EVIDENCE & RESEARCH", desc:"دانش روان‌شناسی بر پایه پژوهش، شواهد و نگاه نقادانه.", href:"/scientific-psychology", image:"/zahra-rastegar-magazine/editorial/research.svg", icon:FlaskConical, tone:"blue" },
-  { n:"16", title:"روان‌شناسی فطری", en:"HUMAN NATURE & MEANING", desc:"تأمل در سرشت انسان و گفت‌وگوی روان‌شناسی با معارف اسلامی.", href:"/fitri-psychology", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:Sparkles, tone:"clay" },
-  { n:"18", title:"آزمون‌های روان‌شناسی", en:"PSYCHOLOGY TESTS", desc:"آشنایی با آزمون‌های معتبر، کاربردها و محدودیت‌های سنجش روان‌شناختی.", href:"/psychology-tests", image:"/zahra-rastegar-magazine/editorial/journal.svg", icon:Brain, tone:"blue" },
+  { n:"16", title:"روان‌شناسی فطری", en:"HUMAN NATURE & MEANING", desc:"تأمل در سرشت انسان و گفت‌وگوی روان‌شناسی با معارف اسلامی.", href:"/fitri-psychology", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:Sparkles, tone:"clay" },
+  { n:"18", title:"آزمون‌های روان‌شناسی", en:"PSYCHOLOGY TESTS", desc:"آشنایی با آزمون‌های معتبر، کاربردها و محدودیت‌های سنجش روان‌شناختی.", href:"/psychology-tests", image:"/zahra-rastegar-magazine/editorial/research.svg", icon:Brain, tone:"blue" },
   { n:"19", title:"دنیای کودکان", en:"CHILD DEVELOPMENT", desc:"رشد، یادگیری، بازی، هیجان‌ها و مهارت‌های زندگی در کودکی.", href:"/children", image:"/zahra-rastegar-magazine/editorial/children.svg", icon:Sparkles, tone:"sage" },
-  { n:"20", title:"طرح درس‌ها", en:"LESSON PLANS", desc:"طرح درس‌های کاربردی، فعالیت‌های کلاسی و ایده‌های آموزش مهارت.", href:"/lesson-plans", image:"/zahra-rastegar-magazine/editorial/children.svg", icon:BookOpen, tone:"ochre" },
-  { n:"21", title:"روایتِ بالین", en:"CLINICAL STORIES", desc:"مطالعه آموزشیِ پرونده‌های موردی، فرمول‌بندی روان‌شناختی و مسیر ارزیابی.", href:"/clinical-stories", image:"/zahra-rastegar-magazine/editorial/mind.svg", icon:Brain, tone:"sage" },
-  { n:"22", title:"اطلسِ روان", en:"PSYCHOLOGICAL DISORDERS", desc:"آشنایی علمی با اختلالات روان‌شناختی، نشانه‌ها، معیارهای تشخیصی و درمان.", href:"/psychological-disorders", image:"/zahra-rastegar-magazine/editorial/mind.svg", icon:FlaskConical, tone:"plum" },
-  { n:"23", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:UserRound, tone:"clay" },
-  { n:"17", title:"نوا و نیایش", en:"SOUND & SUPPLICATION", desc:"دعای عهد، زیارت‌ها، مناجات‌ها و تلاوت‌های شنیداری.", href:"/nava-va-nayesh", image:"/zahra-rastegar-magazine/editorial/nature.svg", icon:Headphones, tone:"plum" }
+  { n:"20", title:"طرح درس‌ها", en:"LESSON PLANS", desc:"طرح درس‌های کاربردی، فعالیت‌های کلاسی و ایده‌های آموزش مهارت.", href:"/lesson-plans", image:"/zahra-rastegar-magazine/editorial/classroom.svg", icon:BookOpen, tone:"ochre" },
+  { n:"21", title:"روایتِ بالین", en:"CLINICAL STORIES", desc:"مطالعه آموزشیِ پرونده‌های موردی، فرمول‌بندی روان‌شناختی و مسیر ارزیابی.", href:"/clinical-stories", image:"/zahra-rastegar-magazine/editorial/clinical.svg", icon:Brain, tone:"sage" },
+  { n:"22", title:"اطلسِ روان", en:"PSYCHOLOGICAL DISORDERS", desc:"آشنایی علمی با اختلالات روان‌شناختی، نشانه‌ها، معیارهای تشخیصی و درمان.", href:"/psychological-disorders", image:"/zahra-rastegar-magazine/editorial/atlas.svg", icon:FlaskConical, tone:"plum" },
+  { n:"23", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:UserRound, tone:"clay" },
+  { n:"17", title:"نوا و نیایش", en:"SOUND & SUPPLICATION", desc:"دعای عهد، زیارت‌ها، مناجات‌ها و تلاوت‌های شنیداری.", href:"/nava-va-nayesh", image:"/zahra-rastegar-magazine/editorial/islamic-book.svg", icon:Headphones, tone:"plum" }
 ];
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
@@ -49,9 +49,9 @@ export default function Home() {
         <div className="cover-index"><span>01</span><i/><span>یک مسیر برای دانستن و زیستن</span></div>
       </div>
       <div className="cover-visual">
-        <EditorialImage src="/zahra-rastegar-magazine/editorial/journal.svg" alt="فضای روشن مطالعه و اندیشه" className="cover-main-image"/>
+        <EditorialImage src="/zahra-rastegar-magazine/editorial/research.svg" alt="فضای روشن مطالعه و اندیشه" className="cover-main-image"/>
         <div className="cover-image-note">A SPACE<br/>TO THINK</div>
-        <div className="cover-mini-card"><EditorialImage src="/zahra-rastegar-magazine/editorial/nature.svg" alt="هنر و خلاقیت" /><span>ART · IDEAS · LIFE</span></div>
+        <div className="cover-mini-card"><EditorialImage src="/zahra-rastegar-magazine/editorial/islamic-book.svg" alt="هنر و خلاقیت" /><span>ART · IDEAS · LIFE</span></div>
         <div className="cover-seal">✳<small>READ<br/>REFLECT<br/>GROW</small></div>
         <span className="cover-vertical">AN INDEPENDENT PERSIAN MAGAZINE</span>
       </div>
@@ -60,7 +60,7 @@ export default function Home() {
     <div className="topic-marquee"><span>روان‌شناسی</span><b>✳</b><span>علوم اسلامی</span><b>✳</b><span>پژوهش</span><b>✳</b><span>فرهنگ و هنر</span><b>✳</b><span>زندگی</span></div>
 
     <section className="editor-pick">
-      <div className="editor-pick-image"><EditorialImage src="/zahra-rastegar-magazine/editorial/nature.svg" alt="منظره‌ای آرام در نور صبح" /></div>
+      <div className="editor-pick-image"><EditorialImage src="/zahra-rastegar-magazine/editorial/islamic-book.svg" alt="منظره‌ای آرام در نور صبح" /></div>
       <div className="editor-pick-copy"><span className="section-kicker">A NOTE FROM THE EDITOR <i/></span><span className="pick-number">01 / EDITOR'S LETTER</span><h2>دانستن، وقتی زیباست<br/>که به <em>زندگی راه پیدا کند.</em></h2><p>این مجله از یک علاقه آغاز شده است: فهم دقیق‌تر انسان، جهان و معنایی که در میان تجربه‌های روزمره جست‌وجو می‌کنیم. اینجا دانش را به گفت‌وگو با زندگی دعوت می‌کنیم.</p><Link href="/about" className="underlined-link">آشنایی با جهان مجله <ArrowLeft size={16}/></Link></div>
     </section>
 
@@ -78,7 +78,7 @@ export default function Home() {
       <div className="shop-story-grid">
         <Link href="/shop" className="shop-feature"><EditorialImage src="/zahra-rastegar-magazine/editorial/planner.svg" alt="دفتر و پلنر روی میز" /><span className="shop-feature-tag">01 — PLANNERS</span><div><span>برای روزهایی آگاهانه‌تر</span><h3>دفترها و پلنرها</h3></div></Link>
         <Link href="/shop" className="shop-side"><EditorialImage src="/zahra-rastegar-magazine/editorial/library.svg" alt="کتاب‌ها و مطالعه"/><span className="shop-feature-tag">02 — BOOKS</span><h3>کتاب و آثار تألیفی</h3></Link>
-        <Link href="/shop" className="shop-side"><EditorialImage src="/zahra-rastegar-magazine/editorial/journal.svg" alt="نوشتن و یادداشت برداری"/><span className="shop-feature-tag">03 — LEARNING</span><h3>فایل‌ها و دوره‌های آموزشی</h3></Link>
+        <Link href="/shop" className="shop-side"><EditorialImage src="/zahra-rastegar-magazine/editorial/research.svg" alt="نوشتن و یادداشت برداری"/><span className="shop-feature-tag">03 — LEARNING</span><h3>فایل‌ها و دوره‌های آموزشی</h3></Link>
       </div>
     </section>
 

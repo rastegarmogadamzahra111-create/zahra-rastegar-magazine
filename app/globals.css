@@ -625,3 +625,30 @@ html,body{color:#20271f;background:#fbf7ef}
  .inner-hero>p{font-size:14px;line-height:2.25}
 }
 @media(min-width:701px){.site-header .mobile-nav{display:none!important}}
+
+/* Mobile drawer: accessible, complete and functional */
+.mobile-drawer{display:none}
+@media(max-width:700px){
+ .site-header .mobile-nav{display:none!important}
+ .mobile-drawer{display:block;position:relative;margin-right:auto;direction:rtl;z-index:30}
+ .mobile-drawer>summary{list-style:none;display:flex;align-items:center;gap:8px;padding:9px 11px;border:1px solid #cfc1ad;border-radius:9px;background:#fffaf2;color:#344536;font-family:'Vazirmatn',Tahoma,sans-serif;font-size:12px;font-weight:600;cursor:pointer}
+ .mobile-drawer>summary::-webkit-details-marker{display:none}
+ .hamburger-lines{width:19px;display:flex;flex-direction:column;gap:4px}
+ .hamburger-lines i{height:2px;width:18px;background:#405541;border-radius:3px;display:block}
+ .drawer-backdrop{position:fixed;inset:0;background:#1c251dcc;z-index:40}
+ .drawer-panel{position:fixed;z-index:41;top:0;bottom:0;right:0;width:min(86vw,390px);overflow-y:auto;background:#fbf7ef;padding:25px 20px 35px;box-shadow:-18px 0 45px #18201835}
+ .drawer-heading{padding:8px 4px 20px;border-bottom:1px solid #d9cbb8;margin-bottom:14px;color:#2c4031}
+ .drawer-heading span{display:block;font-size:21px;font-weight:700}
+ .drawer-heading small{display:block;margin-top:5px;font:9px 'DM Sans',sans-serif;letter-spacing:.16em;color:#927451}
+ .drawer-links{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .drawer-links a{display:flex;align-items:center;min-height:45px;padding:9px 11px;border:1px solid #e1d5c4;border-radius:8px;background:#fffdf8;color:#334333;font-family:'Vazirmatn',Tahoma,sans-serif;font-size:12px;line-height:1.7}
+ .drawer-links a:active,.drawer-links a:hover{background:#e8eddf;border-color:#aab69e}
+ .mobile-drawer[open] .drawer-backdrop{display:block}
+ .site-header .brand-name{font-size:17px}
+ .site-header .language{margin-right:0;padding-right:10px}
+}
+@media(min-width:701px){.mobile-drawer{display:none!important}}
+/* Clearer Persian typography and less cramped navigation */
+.redesign .department-info h3{font-family:'Vazirmatn',Tahoma,sans-serif;line-height:1.8;letter-spacing:0}
+.redesign .department-info p{font-family:'Vazirmatn',Tahoma,sans-serif;line-height:2.25}
+.redesign .inner-hero h1,.redesign .collection-hero h2{font-family:'Vazirmatn',Tahoma,sans-serif;letter-spacing:0;line-height:1.75}
