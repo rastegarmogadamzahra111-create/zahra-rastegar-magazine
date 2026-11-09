@@ -704,3 +704,33 @@ html,body{color:#20271f;background:#fbf7ef}
 .editorial-image{background:#26384d}
 .editorial-image img{display:block;width:100%;height:100%;object-fit:cover}
 .department-photo .editorial-image img{object-position:center}
+
+
+/* Cinematic editorial department cards — inspired by the approved midnight-sky concept */
+.redesign .departments{padding:88px 6% 100px;background:#f4eee4}
+.redesign .department-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.redesign .department-card{display:grid;grid-template-columns:1.08fr .92fr;direction:ltr;min-height:250px;border-radius:22px;overflow:hidden;background:#172b40;border:1px solid #304257;box-shadow:0 14px 34px #14283b18}
+.redesign .department-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px #14283b30}
+.redesign .department-photo{height:100%;min-height:250px;background:#172b40}
+.redesign .department-photo:after{inset:0;background:linear-gradient(90deg,#14283b00 45%,#14283b25 100%)}
+.redesign .department-photo .editorial-image img{object-fit:cover;transition:transform .7s ease}
+.redesign .department-card:hover .department-photo img{transform:scale(1.045)}
+.redesign .department-info{direction:rtl;display:flex;flex-direction:column;justify-content:center;min-height:250px;padding:28px 25px 34px;background:linear-gradient(145deg,#1d344b,#12263a);border:0!important;color:#f6eee2}
+.redesign .department-en{font-size:9px;letter-spacing:.16em;color:#c5a77e}
+.redesign .department-info h3{font-size:clamp(17px,1.6vw,22px);line-height:1.8;color:#f8f0e4;margin:13px 0 7px}
+.redesign .department-info p{font-size:12px;line-height:2.1;color:#d4d9dc;max-width:100%}
+.redesign .department-arrow{left:auto;right:24px;bottom:17px;color:#d5ad73}
+.redesign .department-no{color:#f8f0e4}
+.redesign .department-icon{background:#f4ead9;color:#1d344b;left:14px;bottom:14px}
+.redesign .section-heading h2{color:#1b2d41}
+.redesign .section-heading h2 em{color:#c49a66}
+@media(max-width:760px){
+ .redesign .departments{padding:58px 5% 70px}
+ .redesign .department-grid{grid-template-columns:1fr;gap:15px}
+ .redesign .department-card{grid-template-columns:1fr 1fr;min-height:205px;border-radius:18px}
+ .redesign .department-photo{min-height:205px}
+ .redesign .department-info{min-height:205px;padding:18px 15px 32px}
+ .redesign .department-info h3{font-size:16px;margin:8px 0 4px}
+ .redesign .department-info p{font-size:10px;line-height:1.9}
+ .redesign .department-en{font-size:7px}
+}
