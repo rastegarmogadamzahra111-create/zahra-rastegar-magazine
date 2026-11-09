@@ -4,8 +4,8 @@ import {ManagedEntries} from "../components/managed-entries";
 export default function About() {
   return (
     <PageFrame
-      eyebrow="ABOUT ZAHRA RASTEGAR"
-      title="زهرا رستگار"
+      eyebrow="EDITOR PROFILE"
+      title="دربارهٔ سردبیر"
       lead="دانش، اندیشه و زندگی؛ تلاشی برای شناخت عمیق‌تر انسان و پیوند دادن دانش با زیست انسانی."
     >
       <article className="content-intro">
