@@ -37,8 +37,8 @@ export default function Home() {
         <div className="cover-overline"><span className="overline-dot"/> مجله‌ای مستقل برای ذهن‌های کنجکاو <span className="cover-issue">VOL. 01 — 2026</span></div>
         <div className="cover-wordmark">Zahra Rastegar</div>
         <p className="cover-english">KNOWLEDGE · THOUGHT · LIFE</p>
-        <h1>برای عمیق‌تر دیدنِ <em>زندگی.</em></h1>
-        <p className="cover-lead">روان‌شناسی، علوم اسلامی، پژوهش و فرهنگ؛ جایی برای پرسیدن، آموختن و پیوند دادن دانسته‌ها به زندگی روزمره.</p>
+        <h1>سفری به دنیای <em>معنا...</em></h1>
+        <p className="cover-lead">مرجعی برای اندیشیدن، آموختن و زیستن بهتر؛ جایی برای پیوند دانش، ایمان و زندگی.</p>
         <div className="cover-actions"><Link href="/articles" className="cover-button">ورود به مجله <ArrowLeft size={17}/></Link><Link href="/about" className="cover-text-link">درباره سردبیر <ArrowUpLeft size={16}/></Link></div>
         <div className="cover-index"><span>01</span><i/><span>یک مسیر برای دانستن و زیستن</span></div>
       </div>
