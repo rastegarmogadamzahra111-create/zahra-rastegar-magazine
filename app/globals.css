@@ -415,3 +415,43 @@ h1,h2,h3,.inner-hero h1{font-family:var(--font-display)!important;font-weight:50
 .submission-note a,.submission-back a{display:inline-flex;align-items:center;gap:8px;color:#9d6654;font-size:11px}
 .submission-back{text-align:center;padding:10px 0 65px}
 @media(max-width:700px){.collection-hero,.article-intro-panel,.submit-article-hero{grid-template-columns:1fr;margin:30px 6% 35px;padding:25px 6%;gap:23px}.collection-art{height:190px}.collection-results,.article-browser{padding:30px 6% 60px}.article-intro-art{height:190px}.article-browser-head{align-items:start;flex-direction:column}.article-search{width:100%}.submission-steps{grid-template-columns:1fr;margin:0 6% 25px}.submit-article-art{height:210px}.submission-note{margin:0 6% 20px;padding:25px 6%}.collection-heading h2,.article-browser-head h2{font-size:23px}}
+
+
+/* Audio library */
+.audio-library-hero{margin:48px 8.5% 38px;padding:44px 5%;background:#e8e3d8;display:grid;grid-template-columns:1.05fr .95fr;gap:7%;align-items:center;position:relative;overflow:hidden}
+.audio-library-hero .audio-kicker{font:600 9px 'DM Sans',sans-serif;letter-spacing:.2em;color:#a66e59}
+.audio-library-hero h2{font-size:clamp(29px,3.3vw,43px);line-height:1.8;font-weight:500;color:#34483a;margin:13px 0}
+.audio-library-hero h2 em{font:italic 500 1.2em 'Cormorant Garamond',serif;color:#b96f59}
+.audio-library-hero p{font-size:12px;line-height:2.5;color:#77766d;max-width:460px}
+.audio-hero-art{height:270px;position:relative;overflow:hidden;box-shadow:12px 12px 0 #c8cabb}
+.audio-hero-art img{width:100%;height:100%;object-fit:cover}
+.audio-hero-art span{position:absolute;inset:auto 15px 15px auto;background:#f8f2e8;color:#53634e;padding:12px 16px;font:10px 'DM Sans',sans-serif;letter-spacing:.16em}
+.audio-library-list{padding:12px 8.5% 90px}
+.audio-library-heading{display:flex;justify-content:space-between;align-items:end;margin:0 0 25px}
+.audio-library-heading h2{font-size:26px;font-weight:500;color:#34483a;margin:8px 0}
+.audio-library-heading p{font-size:11px;color:#8a867c}
+.audio-track-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.audio-track-card{background:#fffdf8;border:1px solid #e7dfd2;padding:22px 23px;box-shadow:0 8px 25px #453c2d09}
+.audio-track-top{display:flex;justify-content:space-between;gap:15px;align-items:center}
+.audio-track-category{font-size:10px;color:#a56e59}
+.audio-track-index{font:10px 'DM Sans',sans-serif;color:#a6a18f}
+.audio-track-card h3{font-size:18px;font-weight:500;color:#34483a;margin:13px 0 5px}
+.audio-track-card p{font-size:11px;line-height:2.2;color:#817e73;min-height:43px}
+.audio-track-card audio{width:100%;height:38px;margin-top:13px;accent-color:#53664f}
+.audio-empty{padding:44px 20px;text-align:center;background:#eeeadf;color:#677260}
+.audio-empty span{font:9px 'DM Sans',sans-serif;letter-spacing:.2em;color:#ae7a65}
+.audio-empty h3{font-size:21px;font-weight:500;margin:12px 0}
+.audio-empty p{font-size:12px;line-height:2.2;color:#888477}
+.studio-audio-admin{margin-top:25px}
+.studio-audio-admin>p{font-size:12px;line-height:2.2;color:#777;margin:8px 0 20px}
+.studio-audio-form{display:grid;gap:15px}
+.studio-audio-form label{display:grid;gap:7px;font-size:12px;color:#596052}
+.studio-audio-form input:not([type=file]),.studio-audio-form select,.studio-audio-form textarea{width:100%;border:1px solid #ded8cc;background:#fffdf8;padding:11px;font:12px 'Vazirmatn',sans-serif;color:#34483a}
+.studio-audio-form .studio-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.studio-audio-list{display:grid;gap:8px;margin-top:22px}
+.studio-audio-row{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:13px;background:#f4f0e8}
+.studio-audio-row>div{display:grid;gap:5px}
+.studio-audio-row b{font-size:12px;color:#34483a}
+.studio-audio-row small{font-size:10px;color:#8b877c}
+.studio-audio-row button{display:flex;align-items:center;gap:5px;border:0;background:transparent;color:#a35f50;cursor:pointer;font:11px 'Vazirmatn',sans-serif}
+@media(max-width:700px){.audio-library-hero{grid-template-columns:1fr;margin:30px 6% 30px;padding:28px 6%;gap:22px}.audio-hero-art{height:190px}.audio-library-list{padding:12px 6% 60px}.audio-track-grid{grid-template-columns:1fr}.audio-library-heading{align-items:start;flex-direction:column;gap:7px}.studio-audio-form .studio-two{grid-template-columns:1fr}}

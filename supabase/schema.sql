@@ -63,3 +63,54 @@ drop policy if exists "Editors can delete magazine media" on storage.objects;
 create policy "Editors can delete magazine media" on storage.objects
 for delete to authenticated
 using (bucket_id = 'magazine-media' and (auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
+
+
+-- Audio library: tracks uploaded by the editor from the private studio.
+create table if not exists public.audio_tracks (
+  id uuid primary key default gen_random_uuid(),
+  title text not null,
+  category text not null default 'دعای روزانه',
+  description text not null default '',
+  audio_url text not null,
+  status text not null default 'draft' check (status in ('draft','published')),
+  created_at timestamptz not null default now()
+);
+alter table public.audio_tracks enable row level security;
+
+drop policy if exists "Published audio is public" on public.audio_tracks;
+create policy "Published audio is public" on public.audio_tracks
+for select using (status = 'published' or (auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
+
+drop policy if exists "Editors can add audio" on public.audio_tracks;
+create policy "Editors can add audio" on public.audio_tracks
+for insert to authenticated
+with check ((auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
+
+drop policy if exists "Editors can update audio" on public.audio_tracks;
+create policy "Editors can update audio" on public.audio_tracks
+for update to authenticated
+using ((auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE')
+with check ((auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
+
+drop policy if exists "Editors can delete audio" on public.audio_tracks;
+create policy "Editors can delete audio" on public.audio_tracks
+for delete to authenticated
+using ((auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
+
+insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
+values ('magazine-audio', 'magazine-audio', true, 52428800, array['audio/mpeg','audio/mp4','audio/aac','audio/wav','audio/ogg','audio/x-m4a'])
+on conflict (id) do nothing;
+
+drop policy if exists "Public can listen magazine audio" on storage.objects;
+create policy "Public can listen magazine audio" on storage.objects
+for select using (bucket_id = 'magazine-audio');
+
+drop policy if exists "Editors can upload magazine audio" on storage.objects;
+create policy "Editors can upload magazine audio" on storage.objects
+for insert to authenticated
+with check (bucket_id = 'magazine-audio' and (auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
+
+drop policy if exists "Editors can delete magazine audio" on storage.objects;
+create policy "Editors can delete magazine audio" on storage.objects
+for delete to authenticated
+using (bucket_id = 'magazine-audio' and (auth.jwt() ->> 'email') = 'EDITOR_EMAIL_HERE');
