@@ -652,3 +652,42 @@ html,body{color:#20271f;background:#fbf7ef}
 .redesign .department-info h3{font-family:'Vazirmatn',Tahoma,sans-serif;line-height:1.8;letter-spacing:0}
 .redesign .department-info p{font-family:'Vazirmatn',Tahoma,sans-serif;line-height:2.25}
 .redesign .inner-hero h1,.redesign .collection-hero h2{font-family:'Vazirmatn',Tahoma,sans-serif;letter-spacing:0;line-height:1.75}
+
+
+/* Cohesive twilight editorial palette inspired by the supplied conceptual references */
+:root{
+ --paper:#f4f0e8;--paper2:#e8e2d8;--ink:#1e2a3a;--muted:#667080;
+ --olive:#536477;--olive2:#1d2b3d;--brown:#6d5948;--line:#d8d1c7;--white:#fbf8f2;
+}
+.redesign{background:#f4f0e8;color:#1e2a3a}
+.redesign .announcement,.redesign .contact-editorial,.redesign footer{background:#1d2b3d;color:#f4f0e8}
+.redesign .site-header{background:#f8f5ee;border-color:#d8d1c7}
+.redesign .brand-mark{border-color:#64758a;color:#33465b}
+.redesign .brand-name,.redesign .desktop-nav a,.redesign .section-heading h2,
+.redesign .editor-pick-copy h2,.redesign .about-editor-copy h2,
+.redesign .department-info h3{color:#23344a}
+.redesign .cover-story{background-color:#1d2b3d}
+.redesign .cover-story h1 em,.redesign .section-heading h2 em,
+.redesign .editor-pick-copy h2 em,.redesign .about-editor-copy h2 em{color:#d6ad79}
+.redesign .cover-button{background:#bd9060;color:#172538}
+.redesign .cover-text-link,.redesign .underlined-link{color:#536477}
+.redesign .editor-pick,.redesign .shop-story{background:#e9e2d7}
+.redesign .thought-break{background:#e5d8c8;color:#26364a}
+.redesign .topic-marquee span{background:#e7dfd2;color:#33465b}
+.redesign .department-card{background:#faf7f0;border-color:#d8d1c7}
+.redesign .department-icon{background:#f8f4eb;color:#40536a}
+.redesign .department-info p,.redesign .editor-pick-copy p,
+.redesign .about-editor-copy p{color:#596475}
+.redesign .section-kicker,.redesign .department-en{color:#8a6849}
+.redesign .department-card:hover{border-color:#b78c60;box-shadow:0 14px 32px #24364a20}
+.redesign .contact-editorial-links a{border-color:#aeb8c2;color:#f4f0e8}
+.redesign .contact-editorial-links a:hover{background:#bd9060;color:#1d2b3d}
+.redesign .footer-links,.redesign .footer-bottom{color:#e5ded2}
+@media(max-width:700px){
+ .redesign .site-header{background:#f8f5ee}
+ .mobile-drawer>summary{background:#fffaf2;color:#23344a;border-color:#cfc5b7}
+ .drawer-panel{background:#f4f0e8}
+ .drawer-heading{color:#23344a}
+ .drawer-links a{background:#fbf8f2;color:#26384d;border-color:#ddd4c8}
+ .drawer-links a:active,.drawer-links a:hover{background:#e8e2d8;border-color:#bd9060}
+}
