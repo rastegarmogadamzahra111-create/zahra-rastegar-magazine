@@ -4,7 +4,7 @@ import { SiteHeader, SiteFooter } from "./components/site-shell";
 
 const sections = [
   { n:"01", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85", icon:PenLine, tone:"clay" },
-  { n:"02", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان.", href:"/psychology", image:"https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=85", icon:Brain, tone:"sage" },
+  { n:"02", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان.", href:"/psychology", image:"/zahra-rastegar-magazine/psychology-mind.webp", icon:Brain, tone:"sage" },
   { n:"03", title:"پژوهش و دانش", en:"RESEARCH NOTES", desc:"پرسش علمی، روش تحقیق و خواندن شواهد.", href:"/research", image:"https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1000&q=85", icon:FlaskConical, tone:"blue" },
   { n:"04", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85", icon:BookOpen, tone:"ochre" },
   { n:"05", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1000&q=85", icon:Clapperboard, tone:"plum" },
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="cover-index"><span>01</span><i/><span>یک مسیر برای دانستن و زیستن</span></div>
       </div>
       <div className="cover-visual">
-        <EditorialImage src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=85" alt="فضای روشن مطالعه و اندیشه" className="cover-main-image"/>
+        <EditorialImage src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=85" alt="سفر انسان به جهان ذهن؛ تصویر مفهومی روان‌شناسی" className="cover-main-image"/>
         <div className="cover-image-note">A SPACE<br/>TO THINK</div>
         <div className="cover-mini-card"><EditorialImage src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=1000&q=85" alt="هنر و خلاقیت" /><span>ART · IDEAS · LIFE</span></div>
         <div className="cover-seal">✳<small>READ<br/>REFLECT<br/>GROW</small></div>
