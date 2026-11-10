@@ -756,3 +756,35 @@ html,body{color:#20271f;background:#fbf7ef}
  .drawer-group>span{grid-column:1/-1;padding:8px 3px 3px;border-bottom:1px solid #d9cbb8;color:#927451;font-family:'Vazirmatn',Tahoma,sans-serif;font-size:12px;font-weight:700}
  .drawer-group a{min-width:0}
 }
+
+
+/* Symbolic illustrated identity: no stock photography and no human figures */
+.redesign .cover-story{
+ background-image:radial-gradient(ellipse at 72% 32%,#c99b6850 0,transparent 24%),radial-gradient(ellipse at 80% 70%,#7d947c55 0,transparent 32%),linear-gradient(120deg,#101f31 0%,#1b3447 54%,#263d4c 100%)!important;
+}
+.redesign .cover-visual{background:radial-gradient(circle at 50% 45%,#d9b47b35,transparent 34%),linear-gradient(145deg,#172c40,#243d4a)!important;border:1px solid #b99a6b55}
+.redesign .cover-visual:before{content:"";position:absolute;width:68%;aspect-ratio:1;border:1px solid #d6b98788;border-radius:50%;left:14%;top:12%;box-shadow:0 0 0 24px #d6b98712,0 0 0 52px #d6b9870b;animation:orbit-breathe 8s ease-in-out infinite}
+.redesign .cover-visual:after{content:"✧  ✦  ·  ✧";position:absolute;inset:16% 10% auto;text-align:center;color:#ead5ad;font-size:28px;letter-spacing:1.4em;opacity:.65;animation:stars-drift 9s ease-in-out infinite}
+.illustration-art{position:relative;display:grid;place-items:center;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 48%,#b9956533,transparent 38%),linear-gradient(145deg,#13263b,#1e3b4b 60%,#253c43)!important}
+.illustration-art svg{position:relative;z-index:2;width:88%;height:88%;overflow:visible}
+.art-glow{position:absolute;width:42%;aspect-ratio:1;border-radius:50%;background:#e2b97830;filter:blur(22px);animation:glow-pulse 6s ease-in-out infinite}
+.art-orbit{position:absolute;border:1px solid #d9bd8a44;border-radius:50%;pointer-events:none}
+.art-orbit-one{width:62%;height:82%;transform:rotate(35deg);animation:orbit-turn 28s linear infinite}
+.art-orbit-two{width:82%;height:56%;transform:rotate(-28deg);animation:orbit-turn 34s linear infinite reverse}
+.art-line{fill:none;stroke:#e7c995;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px #e4bd7a55);animation:line-glow 5s ease-in-out infinite}
+.art-line.thin{stroke-width:1.5;opacity:.68}
+.art-star{fill:#f3d7a5;filter:drop-shadow(0 0 8px #e9c184);animation:star-pulse 3s ease-in-out infinite}
+.art-book{fill:#b98b59;stroke:#e0bd8a;stroke-width:2}
+.art-book.second{fill:#385568}
+.art-book.third{fill:#8b694d}
+.art-ground{fill:#334d4d;stroke:#c3a475;stroke-width:2}
+.art-hill{fill:#415d59;stroke:#d3b17c;stroke-width:1.5}
+.art-sun{fill:#e5bd7e;opacity:.88;filter:drop-shadow(0 0 18px #e5bd7e77);animation:glow-pulse 7s ease-in-out infinite}
+.art-grain{position:absolute;inset:0;opacity:.15;background-image:radial-gradient(#f5e5c8 0.6px,transparent .6px);background-size:13px 13px;pointer-events:none}
+@keyframes orbit-breathe{0%,100%{transform:scale(.96) rotate(-8deg);opacity:.55}50%{transform:scale(1.04) rotate(8deg);opacity:1}}
+@keyframes stars-drift{0%,100%{transform:translateY(0);opacity:.45}50%{transform:translateY(-9px);opacity:.85}}
+@keyframes glow-pulse{0%,100%{transform:scale(.92);opacity:.55}50%{transform:scale(1.08);opacity:1}}
+@keyframes orbit-turn{to{transform:rotate(395deg)}}
+@keyframes line-glow{0%,100%{opacity:.76}50%{opacity:1}}
+@keyframes star-pulse{0%,100%{opacity:.6;transform:scale(.85)}50%{opacity:1;transform:scale(1.18)}}
+@media(prefers-reduced-motion:reduce){.illustration-art *, .cover-visual:before,.cover-visual:after{animation:none!important}}
