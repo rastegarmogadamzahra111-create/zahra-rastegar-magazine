@@ -31,8 +31,9 @@ const sections = [
 ];
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
+  const imageSrc = src.startsWith("/") ? `/zahra-rastegar-magazine${src}` : src;
   return <div className={`editorial-image ${className}`} role="img" aria-label={alt}>
-    <img src={src} alt={alt} loading="lazy" />
+    <img src={imageSrc} alt={alt} loading="lazy" />
   </div>;
 }
 
