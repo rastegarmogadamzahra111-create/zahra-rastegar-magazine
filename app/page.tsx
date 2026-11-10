@@ -31,21 +31,8 @@ const sections = [
 ];
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
-  const kind = /کتاب|مطالعه|library|BOOK/i.test(alt) ? "books"
-    : /رشد|کودک|کودکان|sprout|child/i.test(alt) ? "growth"
-    : /قرآن|آیه|نیایش|هنر|خلاقیت|معنا|آرام|منظره/i.test(alt) ? "meaning"
-    : /پژوهش|علم|دانش|research/i.test(alt) ? "research"
-    : /پلنر|دفتر|نوشتن|یادداشت/i.test(alt) ? "writing"
-    : /روان|ذهن|انسان/i.test(alt) ? "mind" : "meaning";
-  return <div className={`editorial-image illustration-art art-${kind} ${className}`} role="img" aria-label={alt}>
-    <span className="art-glow"/><span className="art-orbit art-orbit-one"/><span className="art-orbit art-orbit-two"/>
-    {kind==="mind" && <svg viewBox="0 0 420 300" aria-hidden="true"><path className="art-line" d="M118 155 C80 90 145 38 205 74 C258 22 335 72 313 132 C354 190 286 242 232 211 C174 253 111 218 118 155Z"/><path className="art-line thin" d="M145 151L183 112L219 139L261 94L295 139M183 112L174 177L219 139L232 211M261 94L270 174L313 132M174 177L132 190L118 155M219 139L270 174L232 211"/><circle className="art-star" cx="183" cy="112" r="5"/><circle className="art-star" cx="261" cy="94" r="5"/><circle className="art-star" cx="219" cy="139" r="6"/></svg>}
-    {kind==="books" && <svg viewBox="0 0 420 300" aria-hidden="true"><path className="art-book" d="M75 190 Q145 170 210 196 L210 235 Q142 211 75 232Z"/><path className="art-book second" d="M210 196 Q280 170 345 190 L345 232 Q280 211 210 235Z"/><path className="art-book third" d="M95 151 Q155 132 210 157 L210 194 Q153 173 95 194Z"/><path className="art-book second" d="M210 157 Q266 132 325 151 L325 194 Q266 173 210 194Z"/><path className="art-line" d="M210 157V235"/><circle className="art-star" cx="210" cy="92" r="34"/><path className="art-line thin" d="M210 58V126M176 92H244M186 68L234 116M234 68L186 116"/></svg>}
-    {kind==="growth" && <svg viewBox="0 0 420 300" aria-hidden="true"><path className="art-ground" d="M60 230 Q210 190 360 230L360 300H60Z"/><path className="art-line" d="M210 232V130M210 170Q150 105 124 142Q145 190 210 170ZM210 150Q260 83 298 112Q280 164 210 150Z"/><path className="art-line thin" d="M210 230Q176 253 142 230M210 230Q245 256 279 230"/><circle className="art-sun" cx="306" cy="76" r="34"/></svg>}
-    {kind==="research" && <svg viewBox="0 0 420 300" aria-hidden="true"><path className="art-line" d="M210 48L258 77V133L210 162L162 133V77Z"/><path className="art-line thin" d="M210 48V162M162 77L258 133M258 77L162 133"/><circle className="art-star" cx="210" cy="105" r="12"/><path className="art-book" d="M90 205Q150 184 210 208V244Q150 220 90 242Z"/><path className="art-book second" d="M210 208Q270 184 330 205V242Q270 220 210 244Z"/></svg>}
-    {kind==="writing" && <svg viewBox="0 0 420 300" aria-hidden="true"><path className="art-book" d="M86 210Q148 188 210 212V249Q148 225 86 247Z"/><path className="art-book second" d="M210 212Q272 188 334 210V247Q272 225 210 249Z"/><path className="art-line" d="M245 60Q286 105 213 205Q197 155 245 60Z"/><path className="art-line thin" d="M245 60L213 205M230 117L258 122"/></svg>}
-    {kind==="meaning" && <svg viewBox="0 0 420 300" aria-hidden="true"><circle className="art-sun" cx="210" cy="115" r="48"/><path className="art-hill" d="M25 245Q112 160 190 230Q270 140 395 242V300H25Z"/><path className="art-line thin" d="M210 28V8M112 65L98 51M308 65L322 51M72 120H48M348 120H372"/><circle className="art-star" cx="100" cy="105" r="4"/><circle className="art-star" cx="330" cy="165" r="5"/></svg>}
-    <span className="art-grain"/>
+  return <div className={`editorial-image ${className}`} role="img" aria-label={alt}>
+    <img src={src} alt={alt} loading="lazy" />
   </div>;
 }
 
