@@ -788,3 +788,19 @@ html,body{color:#20271f;background:#fbf7ef}
 @keyframes line-glow{0%,100%{opacity:.76}50%{opacity:1}}
 @keyframes star-pulse{0%,100%{opacity:.6;transform:scale(.85)}50%{opacity:1;transform:scale(1.18)}}
 @media(prefers-reduced-motion:reduce){.illustration-art *, .cover-visual:before,.cover-visual:after{animation:none!important}}
+
+/* Listen then read — a separate music-and-text reading room */
+.listen-read-list{display:grid;gap:24px;padding:12px 6% 80px}
+.listen-read-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:28px;align-items:start;padding:30px;border:1px solid #d8d1c7;border-radius:18px;background:linear-gradient(135deg,#fbf8f2,#eee7dc);box-shadow:0 12px 30px #1d2b3d0a}
+.listen-read-copy{direction:rtl}
+.listen-read-index{font:10px 'DM Sans',sans-serif;letter-spacing:.18em;color:#9a7954}
+.listen-read-copy h2{margin:10px 0 16px;color:#1d2b3d;font-family:'Vazirmatn',Tahoma,sans-serif;font-size:23px;line-height:1.9}
+.listen-read-excerpt{color:#6b6b68;font-size:13px;line-height:2.2;margin-bottom:18px}
+.listen-read-text{white-space:pre-wrap;color:#354052;font-size:14px;line-height:2.6}
+.listen-read-player{position:sticky;top:24px;padding:22px;border-radius:14px;background:#1d2b3d;color:#f7f0e5}
+.listen-read-player span{display:block;color:#d6b783;font:10px 'DM Sans',sans-serif;letter-spacing:.15em;margin-bottom:12px}
+.listen-read-player p{font-size:13px;line-height:2;color:#eee4d4;margin:0 0 16px}
+.listen-read-player audio{display:block;width:100%;max-width:100%;accent-color:#c69b68}
+.listen-read-empty{margin:10px 6% 70px;padding:45px 25px;text-align:center;border:1px dashed #cfc3b2;border-radius:16px;background:#fbf8f2;color:#596475}
+.listen-read-empty h2{font-size:19px;color:#26384d}
+@media(max-width:760px){.listen-read-card{grid-template-columns:1fr;padding:20px;gap:20px}.listen-read-player{position:static;grid-row:1}.listen-read-copy h2{font-size:20px}.listen-read-text{font-size:13px;line-height:2.4}}
