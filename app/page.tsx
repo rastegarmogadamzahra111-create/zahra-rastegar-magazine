@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpLeft, BookOpen, Brain, FlaskConical, Clapperboard, ShoppingBag, Sparkles, PenLine, Send, MessageCircle, Headphones, UserRound } from "lucide-react";
+import { ArrowLeft, ArrowUpLeft, BookOpen, Brain, FlaskConical, Clapperboard, ShoppingBag, Sparkles, PenLine, Send, MessageCircle, Headphones } from "lucide-react";
 import { SiteHeader, SiteFooter } from "./components/site-shell";
 import { ManagedEntries } from "./components/managed-entries";
 
@@ -31,7 +31,7 @@ const sections = [
 { n:"16", title:"سوابق علمی و تخصصی", en:"ACADEMIC & PROFESSIONAL RECORD", desc:"مدارک تحصیلی، گواهی‌نامه‌های معتبر و مسیر آموخته‌ها و مهارت‌ها.", href:"/credentials", image:"/sections/editorial-atlas.svg#research", icon:BookOpen, tone:"ochre" },
 { n:"17", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"/sections/editorial-atlas.svg#library", icon:BookOpen, tone:"ochre" },
 { n:"18", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"/sections/editorial-atlas.svg#culture", icon:Clapperboard, tone:"plum" },
-{ n:"19", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/editorial-atlas.svg#portrait", icon:UserRound, tone:"clay" },
+{ n:"19", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/editorial-atlas.svg#portrait", icon:BookOpen, tone:"clay" },
 { n:"20", title:"پادکست‌ها", en:"LISTEN & REFLECT", desc:"روایت‌ها و گفت‌وگوهای شنیداری درباره انسان و زندگی.", href:"/podcasts", image:"/sections/editorial-atlas.svg#podcast", icon:BookOpen, tone:"plum" },
 { n:"21", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/sections/editorial-atlas.svg#talks", icon:Brain, tone:"blue" },
 { n:"22", title:"آخرین خبرها", en:"PSYCHOLOGY NEWS", desc:"تازه‌ترین خبرها، پژوهش‌ها و رویدادهای علمی حوزه روان‌شناسی.", href:"/psychology-news", image:"/sections/editorial-atlas.svg#news", icon:PenLine, tone:"clay" },

@@ -3,7 +3,7 @@ import {useEffect,useState} from "react";
 import Link from "next/link";
 import {PageFrame} from "./site-shell";
 import {supabase} from "../../lib/supabase";
-import {ArrowLeft,Headphones,Mic2,BookOpen,Brain,ScrollText,BriefcaseBusiness,Bell,Baby,ClipboardCheck,ClipboardList,FlaskConical,UserRound} from "lucide-react";
+import {ArrowLeft,Headphones,Mic2,BookOpen,Brain,ScrollText,BriefcaseBusiness,Bell,Baby,ClipboardCheck,ClipboardList,FlaskConical,BookOpen} from "lucide-react";
 type Post={id:string;title:string;slug:string;category:string;excerpt:string;content:string;cover_image:string|null;price?:string|null;action_url?:string|null;author?:string|null;source_url?:string|null;created_at:string};
 const config:Record<string,{title:string;en:string;lead:string;categories:string[];image:string;icon:any}> = {
  "islamic-sciences":{title:"علوم اسلامی",en:"ISLAMIC SCIENCES",lead:"مطالعه قرآن، اندیشه اسلامی و مبانی معرفتی با توجه به منابع و زمینه‌های علمی.",categories:["علوم اسلامی","قرآن","آیه‌نگار","تفسیر","علوم قرآنی","اندیشه اسلامی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#quran",icon:ScrollText},
@@ -24,7 +24,7 @@ const config:Record<string,{title:string;en:string;lead:string;categories:string
  "lesson-plans":{title:"طرح درس‌ها",en:"LESSON PLANS & ACTIVITIES",lead:"طرح درس‌های گام‌به‌گام، بازی‌های آموزشی و فعالیت‌های مناسب کلاس و گروه‌های سنی مختلف.",categories:["طرح درس‌ها","طرح درس","فعالیت آموزشی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#lessons",icon:ClipboardList},
  "clinical-stories":{title:"روایتِ بالین",en:"CLINICAL STORIES & CASE REPORTS",lead:"مطالعه آموزشیِ موردهای بالینی، از شرح مسئله و ارزیابی تا فرمول‌بندی و ملاحظات مداخله؛ با حفظ کامل محرمانگی.",categories:["روایت بالین","کیس ریپورت","گزارش مورد","مطالعه موردی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#clinical",icon:Brain},
  "psychological-disorders":{title:"اطلسِ روان",en:"PSYCHOLOGICAL DISORDERS",lead:"راهنمایی علمی و قابل‌فهم برای شناخت اختلالات روان‌شناختی، نشانه‌ها، معیارهای تشخیصی، سیر و رویکردهای درمانی.",categories:["اختلالات روان‌شناختی","اختلالات روانی","آسیب‌شناسی روانی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#atlas",icon:FlaskConical},
- "chehre-negar":{title:"چهره‌نگار",en:"LIVES & CONVERSATIONS",lead:"روایت زندگی، مسیر حرفه‌ای، تجربه‌ها و اندیشه‌های افراد اثرگذار؛ همراه با زندگی‌نامه‌های مستند و گفت‌وگوهای اختصاصی.",categories:["چهره‌نگار","زندگی‌نامه","بیوگرافی","گفت‌وگو","مصاحبه","روایت زندگی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#portrait",icon:UserRound}
+ "chehre-negar":{title:"چهره‌نگار",en:"LIVES & CONVERSATIONS",lead:"روایت زندگی، مسیر حرفه‌ای، تجربه‌ها و اندیشه‌های افراد اثرگذار؛ همراه با زندگی‌نامه‌های مستند و گفت‌وگوهای اختصاصی.",categories:["چهره‌نگار","زندگی‌نامه","بیوگرافی","گفت‌وگو","مصاحبه","روایت زندگی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#portrait",icon:BookOpen}
 };
 export function CollectionPage({slug}:{slug:string}){
  const cfg=config[slug]; const [posts,setPosts]=useState<Post[]>([]); const [loading,setLoading]=useState(true); const [selected,setSelected]=useState<Post|null>(null);
