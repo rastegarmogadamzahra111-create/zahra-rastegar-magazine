@@ -19,6 +19,7 @@ const sections = [
 { n:"13", title:"آیه‌نگار", en:"QURANIC REFLECTIONS", desc:"درنگی در آیات قرآن و پیوند آن‌ها با زندگی.", href:"/quran-notes", image:"/sections/quran.svg", icon:BookOpen, tone:"sage" },
 { n:"14", title:"جرقه‌های معنا", en:"SMALL THOUGHTS", desc:"مکث‌هایی کوتاه برای دیدن دوباره زندگی.", href:"/meaning-sparks", image:"/sections/meaning.svg", icon:Sparkles, tone:"sage" },
 { n:"15", title:"نوا و نیایش", en:"SOUND & SUPPLICATION", desc:"دعای عهد، زیارت‌ها، مناجات‌ها و تلاوت‌های شنیداری.", href:"/nava-va-nayesh", image:"/sections/nava.svg", icon:Headphones, tone:"plum" },
+{ n:"16", title:"پخش کن و بعد متن رو بخون", en:"LISTEN · THEN READ", desc:"موسیقی بی‌کلامی برای همراهی با متن‌هایی که باید آرام و عمیق خوانده شوند.", href:"/listen-and-read", image:"/sections/meaning.svg", icon:Headphones, tone:"blue" },
 { n:"16", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"/sections/library.svg", icon:BookOpen, tone:"ochre" },
 { n:"17", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"/sections/culture.svg", icon:Clapperboard, tone:"plum" },
 { n:"18", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/portrait.svg", icon:UserRound, tone:"clay" },
