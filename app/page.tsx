@@ -3,14 +3,14 @@ import { ArrowLeft, ArrowUpLeft, BookOpen, Brain, FlaskConical, Clapperboard, Sh
 import { SiteHeader, SiteFooter } from "./components/site-shell";
 import { ManagedEntries } from "./components/managed-entries";
 
-const sections = [
+const topics = [
 { n:"02", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
 { n:"25", title:"علوم اسلامی", en:"ISLAMIC SCIENCES", desc:"مطالعه قرآن، اندیشه اسلامی و مبانی معرفتی برای فهم عمیق‌تر انسان و جهان.", href:"/islamic-sciences", image:"/sections/quran.svg", icon:BookOpen, tone:"sage" },
 { n:"26", title:"معارف", en:"MAAREF", desc:"تأمل و آموختن در معارف دینی، اخلاق، انسان‌شناسی و معنا.", href:"/maaref", image:"/sections/fitri.svg", icon:Sparkles, tone:"blue" },
 { n:"27", title:"زندگی", en:"LIFE", desc:"پیوند دانش با تجربه‌های روزمره، رشد، فرهنگ، هنر و مهارت‌های زندگی.", href:"/life", image:"/sections/culture.svg", icon:Clapperboard, tone:"rose" }
 ];
 
-const independentSections = [
+const sections = [
 { n:"01", title:"مقالات و جستارها", en:"ARTICLES & ESSAYS", desc:"نوشته‌ها، مقاله‌های علمی و فلسفی و یادداشت‌هایی برای اندیشیدن.", href:"/articles", image:"/sections/articles.svg", icon:PenLine, tone:"clay" },
 { n:"01", title:"درباره سردبیر", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/sections/editor.svg", icon:PenLine, tone:"clay" },
 { n:"04", title:"روان‌شناسی علمی", en:"EVIDENCE & RESEARCH", desc:"دانش روان‌شناسی بر پایه پژوهش، شواهد و نگاه نقادانه.", href:"/scientific-psychology", image:"/sections/science.svg", icon:FlaskConical, tone:"blue" },
@@ -66,7 +66,7 @@ export default function Home() {
       </div>
     </section>
 
-    <div className="topic-marquee"><span>روان‌شناسی</span><b>✳</b><span>علوم اسلامی</span><b>✳</b><span>معارف</span><b>✳</b><span>زندگی</span></div>
+    <div className="topic-marquee">{topics.map((item)=> <Link href={item.href} key={item.href}>{item.title}</Link>)}</div>
 
     <section className="editor-pick">
       <div className="editor-pick-image"><EditorialImage src="/sections/editor-pick.svg" alt="منظره‌ای آرام در نور صبح" /></div>
@@ -84,15 +84,7 @@ export default function Home() {
       </Link>})}</div>
     </section>
 
-    <section className="independent-sections section-block" id="independent-sections">
-      <div className="section-heading"><div><span className="section-kicker">THE REST OF THE MAGAZINE <i/></span><h2>بخش‌های <em>مستقل مجله</em></h2></div><p>مقالات، صوت‌ها، کتاب‌ها و دیگر مجموعه‌ها؛ هرکدام در صفحهٔ مستقل خودشان.</p></div>
-      <div className="department-grid">{independentSections.map((item)=>{const Icon=item.icon;return <Link href={item.href} className={`department-card ${item.tone}`} key={item.href}>
-        <div className="department-photo"><EditorialImage src={item.image} alt={item.title}/><span className="department-no">{item.n}</span><span className="department-icon"><Icon size={18}/></span></div>
-        <div className="department-info"><span className="department-en">{item.en}</span><h3>{item.title}</h3><p>{item.desc}</p><span className="department-arrow"><ArrowLeft size={17}/></span></div>
-      </Link>})}</div>
-    </section>
-
-    <section className="thought-break"><span className="thought-asterisk">✳</span><span className="section-kicker">A MOMENT TO PAUSE</span><p>«هر پرسش عمیق،<br/><em>پنجره‌ای رو به فهمی تازه است.</em>»</p><span className="thought-credit">ZAHRA RASTEGAR · EDITOR</span></section>
+        <section className="thought-break"><span className="thought-asterisk">✳</span><span className="section-kicker">A MOMENT TO PAUSE</span><p>«هر پرسش عمیق،<br/><em>پنجره‌ای رو به فهمی تازه است.</em>»</p><span className="thought-credit">ZAHRA RASTEGAR · EDITOR</span></section>
 
     <section className="shop-story section-block"><div className="section-heading"><div><span className="section-kicker">THE STUDIO & SHOP <i/></span><h2>چیزهایی برای <em>ساختن و نوشتن</em></h2></div><Link href="/shop" className="underlined-link">رفتن به فروشگاه <ArrowLeft size={16}/></Link></div>
       <div className="shop-story-grid">
