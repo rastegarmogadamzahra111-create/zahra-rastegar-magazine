@@ -821,3 +821,8 @@ html,body{color:#20271f;background:#fbf7ef}
 .credentials-empty{margin:10px 6% 70px;padding:42px 22px;text-align:center;border:1px dashed #cfc3b2;border-radius:16px;background:#fbf8f2;color:#596475}
 .credentials-empty h2{font-size:19px;color:#26384d}
 @media(max-width:700px){.credentials-grid{grid-template-columns:1fr;padding:10px 5% 60px}.credential-image{height:210px}}
+
+/* Chehre-negar must remain portrait-free; notes open in their own reader. */
+.collection-art-no-photo{background:#e9e1d2!important;background-image:none!important}
+.collection-art-no-photo img{display:none!important}
+.collection-detail-button{border:0;background:transparent;padding:0;color:var(--olive);font:inherit;font-size:11px;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
