@@ -28,8 +28,7 @@ const sections = [
 { n:"21", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/sections/talks.svg", icon:Brain, tone:"blue" },
 { n:"22", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/sections/news.svg", icon:PenLine, tone:"clay" },
 { n:"23", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/sections/notices.svg", icon:PenLine, tone:"ochre" },
-{ n:"24", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/sections/shop.svg", icon:ShoppingBag, tone:"rose" },,
-
+{ n:"24", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/sections/shop.svg", icon:ShoppingBag, tone:"rose" },
 { n:"25", title:"علوم اسلامی", en:"ISLAMIC SCIENCES", desc:"مطالعه قرآن، اندیشه اسلامی و مبانی معرفتی برای فهم عمیق‌تر انسان و جهان.", href:"/islamic-sciences", image:"/sections/quran.svg", icon:BookOpen, tone:"sage" },
 { n:"26", title:"معارف", en:"MAAREF", desc:"تأمل و آموختن در معارف دینی، اخلاق، انسان‌شناسی و معنا.", href:"/maaref", image:"/sections/fitri.svg", icon:Sparkles, tone:"blue" },
 { n:"27", title:"زندگی", en:"LIFE", desc:"پیوند دانش با تجربه‌های روزمره، رشد، فرهنگ، هنر و مهارت‌های زندگی.", href:"/life", image:"/sections/culture.svg", icon:Clapperboard, tone:"rose" },
