@@ -13,9 +13,10 @@ const topics = [
 const sections = [
 { n:"01", title:"مقالات و جستارها", en:"ARTICLES & ESSAYS", desc:"نوشته‌ها، مقاله‌های علمی و فلسفی و یادداشت‌هایی برای اندیشیدن.", href:"/articles", image:"/sections/articles.svg", icon:PenLine, tone:"clay" },
 { n:"01", title:"درباره سردبیر", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/sections/editor.svg", icon:PenLine, tone:"clay" },
+{ n:"03", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان؛ از مبانی نظری تا تجربه‌های زیسته.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
 { n:"04", title:"روان‌شناسی علمی", en:"EVIDENCE & RESEARCH", desc:"دانش روان‌شناسی بر پایه پژوهش، شواهد و نگاه نقادانه.", href:"/scientific-psychology", image:"/sections/science.svg", icon:FlaskConical, tone:"blue" },
 { n:"05", title:"روان‌شناسی فطری", en:"HUMAN NATURE & MEANING", desc:"تأمل در سرشت انسان و گفت‌وگوی روان‌شناسی با معارف اسلامی.", href:"/fitri-psychology", image:"/sections/fitri.svg", icon:Sparkles, tone:"clay" },
-{ n:"06", title:"روان‌شناسی در میدان زندگی", en:"PSYCHOLOGY IN PRACTICE", desc:"پیوند روان‌شناسی با آموزش، پزشکی، هنر، مدیریت و حرفه‌ها.", href:"/psychology-in-life", image:"/sections/practice.svg", icon:Brain, tone:"rose" },
+{ n:"06", title:"روان‌شناسی در میان زندگی", en:"PSYCHOLOGY IN PRACTICE", desc:"روان‌شناسی در دل تجربه‌های روزمره؛ از رابطه‌ها و خانواده تا آموزش، کار، هنر و انتخاب‌های زندگی.", href:"/psychology-in-life", image:"/sections/practice.svg", icon:Brain, tone:"rose" },
 { n:"07", title:"اطلسِ روان", en:"PSYCHOLOGICAL DISORDERS", desc:"آشنایی علمی با اختلالات روان‌شناختی، نشانه‌ها، معیارهای تشخیصی و درمان.", href:"/psychological-disorders", image:"/sections/atlas.svg", icon:FlaskConical, tone:"plum" },
 { n:"08", title:"آزمون‌های روان‌شناسی", en:"PSYCHOLOGY TESTS", desc:"آشنایی با آزمون‌های معتبر، کاربردها و محدودیت‌های سنجش روان‌شناختی.", href:"/psychology-tests", image:"/sections/tests.svg", icon:Brain, tone:"blue" },
 { n:"09", title:"روایتِ بالین", en:"CLINICAL STORIES", desc:"مطالعه آموزشیِ پرونده‌های موردی، فرمول‌بندی روان‌شناختی و مسیر ارزیابی.", href:"/clinical-stories", image:"/sections/clinical.svg", icon:Brain, tone:"sage" },
