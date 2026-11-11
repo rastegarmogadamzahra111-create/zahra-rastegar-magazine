@@ -7,7 +7,7 @@ const sections = [
 { n:"01", title:"روان‌شناسی", en:"PSYCHOLOGY", desc:"ذهن، رفتار، هیجان و شناخت انسان؛ از مبانی علمی تا کاربردهای روزمره.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
 { n:"02", title:"علوم اسلامی", en:"ISLAMIC SCIENCES", desc:"مطالعه قرآن، اندیشه اسلامی و مبانی معرفتی برای فهم عمیق‌تر انسان و جهان.", href:"/islamic-sciences", image:"/sections/quran.svg", icon:BookOpen, tone:"clay" },
 { n:"03", title:"معارف", en:"MAAREF", desc:"تأمل و آموختن در معارف دینی، اخلاق، انسان‌شناسی و معنا.", href:"/maaref", image:"/sections/fitri.svg", icon:Sparkles, tone:"blue" },
-{ n:"04", title:"زندگی", en:"LIFE", desc:"پیوند دانش با تجربه‌های روزمره، رشد، فرهنگ، هنر و مهارت‌های زندگی.", href:"/life", image:"/sections/life.svg", icon:Clapperboard, tone:"rose" },
+{ n:"04", title:"زندگی", en:"LIFE", desc:"پیوند دانش با تجربه‌های روزمره، رشد، فرهنگ، هنر و مهارت‌های زندگی.", href:"/life", image:"/sections/culture.svg", icon:Clapperboard, tone:"rose" },
 ];
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
