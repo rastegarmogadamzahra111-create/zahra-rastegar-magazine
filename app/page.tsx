@@ -4,31 +4,10 @@ import { SiteHeader, SiteFooter } from "./components/site-shell";
 import { ManagedEntries } from "./components/managed-entries";
 
 const sections = [
-{ n:"01", title:"مقالات و جستارها", en:"ARTICLES & ESSAYS", desc:"نوشته‌ها، مقاله‌های علمی و فلسفی و یادداشت‌هایی برای اندیشیدن.", href:"/articles", image:"/sections/articles.svg", icon:PenLine, tone:"clay" },
-{ n:"01", title:"درباره سردبیر", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/sections/editor.svg", icon:PenLine, tone:"clay" },
-{ n:"02", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
-{ n:"04", title:"روان‌شناسی علمی", en:"EVIDENCE & RESEARCH", desc:"دانش روان‌شناسی بر پایه پژوهش، شواهد و نگاه نقادانه.", href:"/scientific-psychology", image:"/sections/science.svg", icon:FlaskConical, tone:"blue" },
-{ n:"05", title:"روان‌شناسی فطری", en:"HUMAN NATURE & MEANING", desc:"تأمل در سرشت انسان و گفت‌وگوی روان‌شناسی با معارف اسلامی.", href:"/fitri-psychology", image:"/sections/fitri.svg", icon:Sparkles, tone:"clay" },
-{ n:"06", title:"روان‌شناسی در میدان زندگی", en:"PSYCHOLOGY IN PRACTICE", desc:"پیوند روان‌شناسی با آموزش، پزشکی، هنر، مدیریت و حرفه‌ها.", href:"/psychology-in-life", image:"/sections/practice.svg", icon:Brain, tone:"rose" },
-{ n:"07", title:"اطلسِ روان", en:"PSYCHOLOGICAL DISORDERS", desc:"آشنایی علمی با اختلالات روان‌شناختی، نشانه‌ها، معیارهای تشخیصی و درمان.", href:"/psychological-disorders", image:"/sections/atlas.svg", icon:FlaskConical, tone:"plum" },
-{ n:"08", title:"آزمون‌های روان‌شناسی", en:"PSYCHOLOGY TESTS", desc:"آشنایی با آزمون‌های معتبر، کاربردها و محدودیت‌های سنجش روان‌شناختی.", href:"/psychology-tests", image:"/sections/tests.svg", icon:Brain, tone:"blue" },
-{ n:"09", title:"روایتِ بالین", en:"CLINICAL STORIES", desc:"مطالعه آموزشیِ پرونده‌های موردی، فرمول‌بندی روان‌شناختی و مسیر ارزیابی.", href:"/clinical-stories", image:"/sections/clinical.svg", icon:Brain, tone:"sage" },
-{ n:"10", title:"پژوهش و دانش", en:"RESEARCH NOTES", desc:"پرسش علمی، روش تحقیق و خواندن شواهد.", href:"/research", image:"/sections/research.svg", icon:FlaskConical, tone:"blue" },
-{ n:"11", title:"دنیای کودکان", en:"CHILD DEVELOPMENT", desc:"رشد، یادگیری، بازی، هیجان‌ها و مهارت‌های زندگی در کودکی.", href:"/children", image:"/sections/children.svg", icon:Sparkles, tone:"sage" },
-{ n:"12", title:"طرح درس‌ها", en:"LESSON PLANS", desc:"طرح درس‌های کاربردی، فعالیت‌های کلاسی و ایده‌های آموزش مهارت.", href:"/lesson-plans", image:"/sections/lessons.svg", icon:BookOpen, tone:"ochre" },
-{ n:"13", title:"آیه‌نگار", en:"QURANIC REFLECTIONS", desc:"درنگی در آیات قرآن و پیوند آن‌ها با زندگی.", href:"/quran-notes", image:"/sections/quran.svg", icon:BookOpen, tone:"sage" },
-{ n:"14", title:"جرقه‌های معنا", en:"SMALL THOUGHTS", desc:"مکث‌هایی کوتاه برای دیدن دوباره زندگی.", href:"/meaning-sparks", image:"/sections/meaning.svg", icon:Sparkles, tone:"sage" },
-{ n:"15", title:"نوا و نیایش", en:"SOUND & SUPPLICATION", desc:"دعای عهد، زیارت‌ها، مناجات‌ها و تلاوت‌های شنیداری.", href:"/nava-va-nayesh", image:"/sections/nava.svg", icon:Headphones, tone:"plum" },
-{ n:"16", title:"پخش کن و بعد متن رو بخون", en:"LISTEN · THEN READ", desc:"موسیقی بی‌کلامی برای همراهی با متن‌هایی که باید آرام و عمیق خوانده شوند.", href:"/listen-and-read", image:"/sections/meaning.svg", icon:Headphones, tone:"blue" },
-{ n:"16", title:"سوابق علمی و تخصصی", en:"ACADEMIC & PROFESSIONAL RECORD", desc:"مدارک تحصیلی، گواهی‌نامه‌های معتبر و مسیر آموخته‌ها و مهارت‌ها.", href:"/credentials", image:"/sections/research.svg", icon:BookOpen, tone:"ochre" },
-{ n:"17", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"/sections/library.svg", icon:BookOpen, tone:"ochre" },
-{ n:"18", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"/sections/culture.svg", icon:Clapperboard, tone:"plum" },
-{ n:"19", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/portrait.svg", icon:UserRound, tone:"clay" },
-{ n:"20", title:"پادکست‌ها", en:"LISTEN & REFLECT", desc:"روایت‌ها و گفت‌وگوهای شنیداری درباره انسان و زندگی.", href:"/podcasts", image:"/sections/podcast.svg", icon:BookOpen, tone:"plum" },
-{ n:"21", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/sections/talks.svg", icon:Brain, tone:"blue" },
-{ n:"22", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/sections/news.svg", icon:PenLine, tone:"clay" },
-{ n:"23", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/sections/notices.svg", icon:PenLine, tone:"ochre" },
-{ n:"24", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/sections/shop.svg", icon:ShoppingBag, tone:"rose" },
+{ n:"01", title:"روان‌شناسی", en:"PSYCHOLOGY", desc:"ذهن، رفتار، هیجان و شناخت انسان؛ از مبانی علمی تا کاربردهای روزمره.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
+{ n:"02", title:"علوم اسلامی", en:"ISLAMIC SCIENCES", desc:"مطالعه قرآن، اندیشه اسلامی و مبانی معرفتی برای فهم عمیق‌تر انسان و جهان.", href:"/islamic-sciences", image:"/sections/quran.svg", icon:BookOpen, tone:"clay" },
+{ n:"03", title:"معارف", en:"MAAREF", desc:"تأمل و آموختن در معارف دینی، اخلاق، انسان‌شناسی و معنا.", href:"/maaref", image:"/sections/fitri.svg", icon:Sparkles, tone:"blue" },
+{ n:"04", title:"زندگی", en:"LIFE", desc:"پیوند دانش با تجربه‌های روزمره، رشد، فرهنگ، هنر و مهارت‌های زندگی.", href:"/life", image:"/sections/life.svg", icon:Clapperboard, tone:"rose" },
 ];
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
@@ -60,7 +39,7 @@ export default function Home() {
       </div>
     </section>
 
-    <div className="topic-marquee"><span>روان‌شناسی</span><b>✳</b><span>علوم اسلامی</span><b>✳</b><span>پژوهش</span><b>✳</b><span>فرهنگ و هنر</span><b>✳</b><span>زندگی</span></div>
+    <div className="topic-marquee"><span>روان‌شناسی</span><b>✳</b><span>علوم اسلامی</span><b>✳</b><span>معارف</span><b>✳</b><span>زندگی</span></div>
 
     <section className="editor-pick">
       <div className="editor-pick-image"><EditorialImage src="/sections/editor-pick.svg" alt="منظره‌ای آرام در نور صبح" /></div>
@@ -68,6 +47,7 @@ export default function Home() {
     </section>
 
     <ManagedEntries categories={["یادداشت سردبیر","معرفی مجله"]} emptyTitle="یادداشت‌های تازه تحریریه به‌زودی منتشر می‌شوند." />
+    <div className="home-independent-links"><Link href="/notes">یادداشت‌ها <ArrowLeft size={15}/></Link><Link href="/psychology-news">آخرین خبرهای روان‌شناسی <ArrowLeft size={15}/></Link></div>
 
     <section className="departments section-block" id="sections">
       <div className="section-heading"><div><span className="section-kicker">EXPLORE THE MAGAZINE <i/></span><h2>از کجا <em>شروع کنیم؟</em></h2></div><p>هر بخش، دریچه‌ای مستقل به یک جهان تازه است.</p></div>
@@ -89,7 +69,7 @@ export default function Home() {
 
     <section className="about-editor">
       <div className="about-editor-mark"><span>ZR</span><small>FOUNDER<br/>& EDITOR</small></div>
-      <div className="about-editor-copy"><span className="section-kicker">A LITTLE ABOUT THE EDITOR <i/></span><h2>دربارهٔ سردبیر؛<br/><em>دانشجو و جست‌وجوگر معنا.</em></h2><p>هم‌زمان در حوزه‌های روان‌شناسی، علوم اسلامی و معارف تحصیل می‌کنم و در کنار درس، در زمینه روان‌شناسی رشد و آموزش مهارت‌های کودکان تجربه کسب می‌کنم. این مجله بخشی از مسیر یادگیری، نوشتن و به اشتراک گذاشتن آموخته‌هاست.</p><Link href="/about" className="underlined-link">آشنایی بیشتر با سردبیر <ArrowLeft size={16}/></Link></div>
+      <div className="about-editor-copy"><span className="section-kicker">A LITTLE ABOUT THE EDITOR <i/></span><h2>دربارهٔ سردبیر؛<br/><em>دانشجو و جست‌وجوگر معنا.</em></h2><p>من زهرا رستگارمقدم هستم؛ هم‌زمان در حوزه‌های روان‌شناسی، علوم اسلامی و معارف تحصیل می‌کنم و در کنار درس، در زمینه روان‌شناسی رشد و آموزش مهارت‌های کودکان تجربه کسب می‌کنم. این مجله بخشی از مسیر یادگیری، نوشتن و به اشتراک گذاشتن آموخته‌هاست.</p><Link href="/about" className="underlined-link">آشنایی بیشتر با سردبیر <ArrowLeft size={16}/></Link></div>
       <span className="about-editor-flower">✳</span>
     </section>
 

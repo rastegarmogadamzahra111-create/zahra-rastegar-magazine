@@ -9,6 +9,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "",
     "/about",
+    "/islamic-sciences",
+    "/life",
+    "/maaref",
+    "/notes",
+    "/psychology-news",
     "/articles",
     "/contact",
     "/library",
