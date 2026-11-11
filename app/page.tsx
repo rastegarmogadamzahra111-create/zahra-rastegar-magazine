@@ -20,14 +20,15 @@ const sections = [
 { n:"14", title:"جرقه‌های معنا", en:"SMALL THOUGHTS", desc:"مکث‌هایی کوتاه برای دیدن دوباره زندگی.", href:"/meaning-sparks", image:"/sections/meaning.svg", icon:Sparkles, tone:"sage" },
 { n:"15", title:"نوا و نیایش", en:"SOUND & SUPPLICATION", desc:"دعای عهد، زیارت‌ها، مناجات‌ها و تلاوت‌های شنیداری.", href:"/nava-va-nayesh", image:"/sections/nava.svg", icon:Headphones, tone:"plum" },
 { n:"16", title:"پخش کن و بعد متن رو بخون", en:"LISTEN · THEN READ", desc:"موسیقی بی‌کلامی برای همراهی با متن‌هایی که باید آرام و عمیق خوانده شوند.", href:"/listen-and-read", image:"/sections/meaning.svg", icon:Headphones, tone:"blue" },
-{ n:"16", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"/sections/library.svg", icon:BookOpen, tone:"ochre" },
-{ n:"17", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"/sections/culture.svg", icon:Clapperboard, tone:"plum" },
-{ n:"18", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/portrait.svg", icon:UserRound, tone:"clay" },
-{ n:"19", title:"پادکست‌ها", en:"LISTEN & REFLECT", desc:"روایت‌ها و گفت‌وگوهای شنیداری درباره انسان و زندگی.", href:"/podcasts", image:"/sections/podcast.svg", icon:BookOpen, tone:"plum" },
-{ n:"20", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/sections/talks.svg", icon:Brain, tone:"blue" },
-{ n:"21", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/sections/news.svg", icon:PenLine, tone:"clay" },
-{ n:"22", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/sections/notices.svg", icon:PenLine, tone:"ochre" },
-{ n:"23", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/sections/shop.svg", icon:ShoppingBag, tone:"rose" },
+{ n:"16", title:"سوابق علمی و تخصصی", en:"ACADEMIC & PROFESSIONAL RECORD", desc:"مدارک تحصیلی، گواهی‌نامه‌های معتبر و مسیر آموخته‌ها و مهارت‌ها.", href:"/credentials", image:"/sections/research.svg", icon:BookOpen, tone:"ochre" },
+{ n:"17", title:"کتابخانه", en:"THE LIBRARY", desc:"معرفی و نقد کتاب‌های روان‌شناسی و اندیشه.", href:"/library", image:"/sections/library.svg", icon:BookOpen, tone:"ochre" },
+{ n:"18", title:"فرهنگ و رسانه", en:"CULTURE / FRAME", desc:"فیلم، انیمیشن و روایت از دریچه تجربه انسانی.", href:"/media", image:"/sections/culture.svg", icon:Clapperboard, tone:"plum" },
+{ n:"19", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/portrait.svg", icon:UserRound, tone:"clay" },
+{ n:"20", title:"پادکست‌ها", en:"LISTEN & REFLECT", desc:"روایت‌ها و گفت‌وگوهای شنیداری درباره انسان و زندگی.", href:"/podcasts", image:"/sections/podcast.svg", icon:BookOpen, tone:"plum" },
+{ n:"21", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/sections/talks.svg", icon:Brain, tone:"blue" },
+{ n:"22", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/sections/news.svg", icon:PenLine, tone:"clay" },
+{ n:"23", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/sections/notices.svg", icon:PenLine, tone:"ochre" },
+{ n:"24", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/sections/shop.svg", icon:ShoppingBag, tone:"rose" },
 ];
 
 function EditorialImage({src,alt,className=""}:{src:string,alt:string,className?:string}) {
