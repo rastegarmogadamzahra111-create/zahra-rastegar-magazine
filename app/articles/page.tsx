@@ -5,7 +5,7 @@ import {PageFrame} from "../components/site-shell";
 import {supabase} from "../../lib/supabase";
 import {ArrowLeft,Search,Feather} from "lucide-react";
 type Post={id:string;title:string;slug:string;category:string;excerpt:string;content:string;cover_image:string|null;pdf_url?:string|null;created_at:string};
-const categories=["همه مقالات","مقالات علمی","مقالات فلسفی","مقالات مروری","مقالات پژوهشی"];
+const categories=["همه مقالات","مقالات علمی","مقالات فلسفی","مقالات مروری","مقالات پژوهشی","مقاله","مقالات"];
 export default function Articles(){
  const [posts,setPosts]=useState<Post[]>([]); const [selected,setSelected]=useState<Post|null>(null); const [loading,setLoading]=useState(true); const [loadError,setLoadError]=useState(false); const [category,setCategory]=useState("همه مقالات"); const [query,setQuery]=useState("");
  useEffect(()=>{if(!supabase){setLoading(false);return;}supabase.from("posts").select("id,title,slug,category,excerpt,content,cover_image,pdf_url,created_at").eq("status","published").in("category",categories.slice(1)).order("created_at",{ascending:false}).then(({data,error})=>{if(error)setLoadError(true);else setPosts((data||[]) as Post[]);setLoading(false)})},[]);
