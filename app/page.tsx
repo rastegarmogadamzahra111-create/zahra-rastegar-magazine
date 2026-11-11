@@ -11,7 +11,8 @@ const topics = [
 ];
 
 const sections = [
-{ n:"01", title:"مقالات و جستارها", en:"ARTICLES & ESSAYS", desc:"نوشته‌ها، مقاله‌های علمی و فلسفی و یادداشت‌هایی برای اندیشیدن.", href:"/articles", image:"/sections/articles.svg", icon:PenLine, tone:"clay" },
+{ n:"01", title:"مقالات و جستارها", en:"ARTICLES & ESSAYS", desc:"مقاله‌های علمی، پژوهشی، فلسفی و جستارهای تحلیلی؛ مستقل از یادداشت‌های شخصی و تأملی.", href:"/articles", image:"/sections/articles.svg", icon:PenLine, tone:"clay" },
+{ n:"02", title:"یادداشت‌ها", en:"NOTES & REFLECTIONS", desc:"نوشته‌های کوتاه، تأملات شخصی و یادداشت‌های مستقل تحریریه.", href:"/notes", image:"/sections/meaning.svg", icon:PenLine, tone:"sage" },
 { n:"01", title:"درباره سردبیر", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/sections/editor.svg", icon:PenLine, tone:"clay" },
 { n:"03", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان؛ از مبانی نظری تا تجربه‌های زیسته.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
 { n:"04", title:"روان‌شناسی علمی", en:"EVIDENCE & RESEARCH", desc:"دانش روان‌شناسی بر پایه پژوهش، شواهد و نگاه نقادانه.", href:"/scientific-psychology", image:"/sections/science.svg", icon:FlaskConical, tone:"blue" },
@@ -33,7 +34,7 @@ const sections = [
 { n:"19", title:"چهره‌نگار", en:"LIVES & CONVERSATIONS", desc:"زندگی‌نامه، مسیر حرفه‌ای و گفت‌وگوهای اختصاصی با افراد اثرگذار.", href:"/chehre-negar", image:"/sections/portrait.svg", icon:UserRound, tone:"clay" },
 { n:"20", title:"پادکست‌ها", en:"LISTEN & REFLECT", desc:"روایت‌ها و گفت‌وگوهای شنیداری درباره انسان و زندگی.", href:"/podcasts", image:"/sections/podcast.svg", icon:BookOpen, tone:"plum" },
 { n:"21", title:"سخنرانی‌ها", en:"IDEAS ON STAGE", desc:"درس‌گفتارها، نشست‌ها و سخنرانی‌های منتخب.", href:"/talks", image:"/sections/talks.svg", icon:Brain, tone:"blue" },
-{ n:"22", title:"آخرین خبرها", en:"THE JOURNAL", desc:"یادداشت‌ها، روایت‌ها و تازه‌ترین نوشته‌های تحریریه.", href:"/articles", image:"/sections/news.svg", icon:PenLine, tone:"clay" },
+{ n:"22", title:"آخرین خبرها", en:"PSYCHOLOGY NEWS", desc:"تازه‌ترین خبرها، پژوهش‌ها و رویدادهای علمی حوزه روان‌شناسی.", href:"/psychology-news", image:"/sections/news.svg", icon:PenLine, tone:"clay" },
 { n:"23", title:"اطلاعیه‌ها", en:"NEWS & ANNOUNCEMENTS", desc:"رویدادها، فراخوان‌ها و خبرهای تحریریه.", href:"/notices", image:"/sections/notices.svg", icon:PenLine, tone:"ochre" },
 { n:"24", title:"فروشگاه", en:"OBJECTS & EDITIONS", desc:"پلنرها، آثار تألیفی و ابزارهای یادگیری.", href:"/shop", image:"/sections/shop.svg", icon:ShoppingBag, tone:"rose" }
 ];
