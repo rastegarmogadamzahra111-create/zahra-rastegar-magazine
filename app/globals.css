@@ -804,3 +804,20 @@ html,body{color:#20271f;background:#fbf7ef}
 .listen-read-empty{margin:10px 6% 70px;padding:45px 25px;text-align:center;border:1px dashed #cfc3b2;border-radius:16px;background:#fbf8f2;color:#596475}
 .listen-read-empty h2{font-size:19px;color:#26384d}
 @media(max-width:760px){.listen-read-card{grid-template-columns:1fr;padding:20px;gap:20px}.listen-read-player{position:static;grid-row:1}.listen-read-copy h2{font-size:20px}.listen-read-text{font-size:13px;line-height:2.4}}
+
+
+/* Academic and professional credentials */
+.credentials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding:12px 6% 80px}
+.credential-card{overflow:hidden;border:1px solid #ded5c8;border-radius:16px;background:#fbf8f2;box-shadow:0 10px 28px #1d2b3d0a}
+.credential-image{display:block;height:240px;background:#eee8de;text-align:center}
+.credential-image img{width:100%;height:100%;object-fit:contain}
+.credential-placeholder{height:180px;display:grid;place-items:center;background:linear-gradient(135deg,#e8e0d3,#d9dfd3);color:#8d7658}
+.credential-copy{padding:22px;direction:rtl}
+.credential-type{font:10px 'DM Sans',sans-serif;letter-spacing:.14em;color:#9a7954}
+.credential-copy h2{margin:10px 0;color:#1d2b3d;font-family:'Vazirmatn',Tahoma,sans-serif;font-size:20px;line-height:1.8}
+.credential-excerpt,.credential-description{color:#596475;font-size:13px;line-height:2.2;white-space:pre-wrap}
+.credential-copy small{display:block;color:#7b756b;margin-top:12px}
+.credential-file{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:10px 14px;border:1px solid #c8b99f;border-radius:8px;color:#34465a;font-size:13px;text-decoration:none}
+.credentials-empty{margin:10px 6% 70px;padding:42px 22px;text-align:center;border:1px dashed #cfc3b2;border-radius:16px;background:#fbf8f2;color:#596475}
+.credentials-empty h2{font-size:19px;color:#26384d}
+@media(max-width:700px){.credentials-grid{grid-template-columns:1fr;padding:10px 5% 60px}.credential-image{height:210px}}
