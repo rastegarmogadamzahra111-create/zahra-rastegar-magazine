@@ -3,7 +3,7 @@ import {useEffect,useState} from "react";
 import Link from "next/link";
 import {PageFrame} from "./site-shell";
 import {supabase} from "../../lib/supabase";
-import {ArrowLeft,Headphones,Mic2,BookOpen,Brain,ScrollText,BriefcaseBusiness,Bell,Baby,ClipboardCheck,ClipboardList,FlaskConical,BookOpen} from "lucide-react";
+import {ArrowLeft,Headphones,Mic2,BookOpen,Brain,ScrollText,BriefcaseBusiness,Bell,Baby,ClipboardCheck,ClipboardList,FlaskConical} from "lucide-react";
 type Post={id:string;title:string;slug:string;category:string;excerpt:string;content:string;cover_image:string|null;price?:string|null;action_url?:string|null;author?:string|null;source_url?:string|null;created_at:string};
 const config:Record<string,{title:string;en:string;lead:string;categories:string[];image:string;icon:any}> = {
  "islamic-sciences":{title:"علوم اسلامی",en:"ISLAMIC SCIENCES",lead:"مطالعه قرآن، اندیشه اسلامی و مبانی معرفتی با توجه به منابع و زمینه‌های علمی.",categories:["علوم اسلامی","قرآن","آیه‌نگار","تفسیر","علوم قرآنی","اندیشه اسلامی"],image:"/zahra-rastegar-magazine/sections/editorial-atlas.svg#quran",icon:ScrollText},
