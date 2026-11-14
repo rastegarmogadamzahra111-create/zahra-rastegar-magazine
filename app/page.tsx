@@ -13,7 +13,6 @@ const topics = [
 const sections = [
 { n:"01", title:"مقالات و جستارها", en:"ARTICLES & ESSAYS", desc:"مقاله‌های علمی، پژوهشی، فلسفی و جستارهای تحلیلی؛ مستقل از یادداشت‌های شخصی و تأملی.", href:"/articles", image:"/sections/articles.svg", icon:PenLine, tone:"clay" },
 { n:"02", title:"یادداشت‌ها", en:"NOTES & REFLECTIONS", desc:"نوشته‌های کوتاه، تأملات شخصی و یادداشت‌های مستقل تحریریه.", href:"/notes", image:"/sections/meaning.svg", icon:PenLine, tone:"sage" },
-{ n:"01", title:"درباره سردبیر", en:"THE EDITOR", desc:"مسیر، دغدغه‌ها و جهان فکری بنیان‌گذار مجله.", href:"/about", image:"/sections/editor.svg", icon:PenLine, tone:"clay" },
 { n:"03", title:"روان‌شناسی", en:"THE HUMAN MIND", desc:"ذهن، رفتار، هیجان و مسیر رشد انسان؛ از مبانی نظری تا تجربه‌های زیسته.", href:"/psychology", image:"/sections/psychology.svg", icon:Brain, tone:"sage" },
 { n:"04", title:"روان‌شناسی علمی", en:"EVIDENCE & RESEARCH", desc:"دانش روان‌شناسی بر پایه پژوهش، شواهد و نگاه نقادانه.", href:"/scientific-psychology", image:"/sections/science.svg", icon:FlaskConical, tone:"blue" },
 { n:"05", title:"روان‌شناسی فطری", en:"HUMAN NATURE & MEANING", desc:"تأمل در سرشت انسان و گفت‌وگوی روان‌شناسی با معارف اسلامی.", href:"/fitri-psychology", image:"/sections/fitri.svg", icon:Sparkles, tone:"clay" },
