@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Zahra Rastegar | مجله دیجیتال",
+  title: "فِطرَت FITRAT | مجله دیجیتال",
   description: "مجله‌ای برای روان‌شناسی، پژوهش، دانش و زندگی؛ دانش، اندیشه، زندگی.",
   verification: {
     google: "6nUB-lfQUP21BFVzEO-nKYFaMxZZrqAS8WV_c0pYMbI",
   },
   openGraph: {
-    title: "Zahra Rastegar — Digital Magazine",
+    title: "FITRAT — Digital Magazine",
     description: "دانش، اندیشه، زندگی",
     type: "website",
     locale: "fa_IR",
