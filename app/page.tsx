@@ -51,7 +51,7 @@ export default function Home() {
     <section className="cover-story">
       <div className="cover-copy">
         <div className="cover-overline"><span className="overline-dot"/> مجله‌ای مستقل برای ذهن‌های کنجکاو <span className="cover-issue">VOL. 01 — 2026</span></div>
-        <div className="cover-wordmark">Zahra Rastegar</div>
+        <div className="cover-wordmark">فِطرَت <span>FITRAT</span></div>
         <p className="cover-english">KNOWLEDGE · THOUGHT · LIFE</p>
         <h1>سفری به دنیای <em>معنا...</em></h1>
         <p className="cover-lead">مرجعی برای اندیشیدن، آموختن و زیستن بهتر؛ جایی برای پیوند دانش، ایمان و زندگی.</p>
@@ -85,7 +85,7 @@ export default function Home() {
       </Link>})}</div>
     </section>
 
-        <section className="thought-break"><span className="thought-asterisk">✳</span><span className="section-kicker">A MOMENT TO PAUSE</span><p>«هر پرسش عمیق،<br/><em>پنجره‌ای رو به فهمی تازه است.</em>»</p><span className="thought-credit">ZAHRA RASTEGAR · EDITOR</span></section>
+        <section className="thought-break"><span className="thought-asterisk">✳</span><span className="section-kicker">A MOMENT TO PAUSE</span><p>«هر پرسش عمیق،<br/><em>پنجره‌ای رو به فهمی تازه است.</em>»</p><span className="thought-credit">AN INDEPENDENT MAGAZINE</span></section>
 
     <section className="shop-story section-block"><div className="section-heading"><div><span className="section-kicker">THE STUDIO & SHOP <i/></span><h2>چیزهایی برای <em>ساختن و نوشتن</em></h2></div><Link href="/shop" className="underlined-link">رفتن به فروشگاه <ArrowLeft size={16}/></Link></div>
       <div className="shop-story-grid">
@@ -97,7 +97,7 @@ export default function Home() {
 
     <section className="about-editor">
       <div className="about-editor-mark"><span>ZR</span><small>FOUNDER<br/>& EDITOR</small></div>
-      <div className="about-editor-copy"><span className="section-kicker">A LITTLE ABOUT THE EDITOR <i/></span><h2>دربارهٔ سردبیر؛<br/><em>دانشجو و جست‌وجوگر معنا.</em></h2><p>من زهرا رستگارمقدم هستم؛ هم‌زمان در حوزه‌های روان‌شناسی، علوم اسلامی و معارف تحصیل می‌کنم و در کنار درس، در زمینه روان‌شناسی رشد و آموزش مهارت‌های کودکان تجربه کسب می‌کنم. این مجله بخشی از مسیر یادگیری، نوشتن و به اشتراک گذاشتن آموخته‌هاست.</p><Link href="/about" className="underlined-link">آشنایی بیشتر با سردبیر <ArrowLeft size={16}/></Link></div>
+      <div className="about-editor-copy"><span className="section-kicker">A LITTLE ABOUT THE EDITOR <i/></span><h2>دربارهٔ سردبیر؛<br/><em>دانشجو و جست‌وجوگر معنا.</em></h2><p>این مجله از دلِ علاقه به روان‌شناسی، علوم اسلامی و معارف شکل گرفته است؛ تلاشی برای پیوند دادن دانش، اندیشه و زندگی و به اشتراک گذاشتن آموخته‌ها در مسیر فهم بهتر انسان.</p><Link href="/about" className="underlined-link">آشنایی بیشتر با سردبیر <ArrowLeft size={16}/></Link></div>
       <span className="about-editor-flower">✳</span>
     </section>
 
